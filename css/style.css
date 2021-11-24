@@ -1,12 +1,10 @@
-/* body {
-  background: #E5E5E5;
-}
 
-h1 {
-  font-family: Poppins;
+.main-h1 {
+  color: brown;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   display: flex;
   align-items: center;
-} */
+}
