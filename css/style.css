@@ -8,9 +8,18 @@
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: #fff;
   width: 375px;
+}
+
+button {
+  background: none;
+  border: none;
+
+  /* border: 1px solid transparent; */
+
+  /* background-color: #fff; */
 }
 
 header {
@@ -18,13 +27,15 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: baseline;
-  margin: 0;
-  padding: 20px;
+  padding: 15px;
+  margin-top: 10px;
 }
 
 .logo {
+  color: #6070ff;
+  padding-left: 20px;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-style: normal;
   text-decoration: none;
   font-size: 20px;
@@ -33,7 +44,7 @@ header {
 .main-page {
   display: flex;
   flex-flow: column nowrap;
-  padding: 20px 1.2rem;
+  padding: 50px 1.2rem;
   margin: 0;
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
@@ -41,23 +52,33 @@ header {
 }
 
 .main-page-h1 {
+  color: #172b4d;
+  font-style: normal;
   font-size: 36px;
-  font-weight: 700;
-  padding: 0;
-  margin-bottom: 0;
-  height: 250px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  line-height: 52px;
 }
 
 .main-p {
-  padding: 0;
-  margin-top: 0;
+  color: #344563;
   font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 15px;
+  margin: 0;
+  line-height: 30px;
 }
 
 .media-h2 {
-  color: rgb(0, 89, 255);
+  color: #7f8cff;
   font-style: normal;
   font-weight: 400;
+  padding: 0 15px;
+  margin: 15px 0 0 0;
+
+  /* margin: 0 auto; */
 }
 
 .media {
@@ -66,5 +87,6 @@ header {
   column-gap: 20px;
   align-items: center;
   list-style: none;
-  padding: 2px;
+  padding: 20px 10px;
+  margin: auto 0;
 }
