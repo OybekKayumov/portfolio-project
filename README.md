@@ -4,7 +4,7 @@
 
 > Portfolio project in the Module-1 understand how to use a Figma design and use Flexbox to place elements in the page.
 
-![app-screenshot]()
+![app-screenshot](./images/1-proj-mobile.png)
 
 ## Built With
 
