@@ -1,7 +1,9 @@
 body {
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #ffe4e1;
+  background-color: #fff;
+  width: 375px;
 }
 
 header {
