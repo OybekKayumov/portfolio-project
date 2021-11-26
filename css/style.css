@@ -144,16 +144,16 @@ header {
   padding: 6px 14px; /* orasini ochish */
   background: #ebebff;
   border-radius: 8px;
-  color: #6070ff;
   letter-spacing: 0.05em; /* nimaga */
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   list-style: none; /* nuqtalani oladi listdan */
 }
 
 .tag-li-tonic1 a {
+  color: #6070ff;
   text-decoration: none;  /* tagidagi chiziqlarni o'chirish */
 }
 
@@ -161,7 +161,7 @@ header {
   color: #344563;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   margin: 12px 0;
 
