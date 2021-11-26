@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   background-color: #fff;
   width: 375px;
+  border: 1px solid red; /* for check */
 }
 
 button {
@@ -93,6 +94,138 @@ header {
   list-style: none;
   padding: 20px 10px;
   margin: auto 0;
+}
+
+/* section works tonic1 */
+
+.btn {
+  color: #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.btn-enabled-tonic1 {
+  color: #6070ff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+}
+
+.btn-enabled-tonic1:hover {
+  color: #fff;
+  background: #6070ff; /* * */
+  box-shadow: 0 8px 16px rgba(70, 85, 255, 0.25);
+}
+
+.btn-enabled-tonic1:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+.tags-ul-tonic1 {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.tag-li-tonic1 {
+  padding: 4px 12px; /* orasini ochish */
+  background: #ebebeb;
+  border-radius: 8px;
+  color: #6070ff;
+  letter-spacing: 0.05em; /* nimaga */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  list-style: none; /* nuqtalani oladi listdan */
+}
+
+.tag-li-tonic1 a {
+  text-decoration: none;  /* tagidagi chiziqlarni o'chirish */
+}
+
+.description-p-tonic1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+
+  /* color: red; for check */
+}
+
+.frame2-tonic1 {
+  display: flex; /* bir qatorga turishadi */
+  justify-items: center;
+  gap: 30px; /* orasidagi masofa */
+}
+
+.roles-tonic1 {
+  display: flex; /* Back End Dev va 2015 bir qatorga */
+  justify-items: end;
+  gap: 30px;
+}
+
+.role-tonic1 {
+  color: #7a869a;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.client-tonic1 {
+  color: #344563;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card-title-tonic1 {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  margin: 14px 0;
+}
+
+.card-image-tonic1 {
+  width: 300px;
+  height: 225px;
+  left: 15px;
+  right: 15px;
+}
+
+.card-tonic1 {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 14px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 16px;
+  margin: 40px 0;
+  width: 330px;
+  height: auto;
+}
+
+.works-container-tonic1 {
+  display: grid; /* grid qo'yildi */
+  grid-template-columns: auto; /* nima */
+  grid-template-rows: auto auto auto auto; /* nima */
+  justify-items: center; /* hammasi centerga otdi */
+  justify-content: center;
 }
 
 /* section about myself */
