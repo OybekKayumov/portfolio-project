@@ -1,9 +1,5 @@
 * {
   font-family: 'Poppins', sans-serif;
-
-  /* for check */
-
-  /* color: brown; */
 }
 
 h1 {
@@ -15,16 +11,11 @@ body {
   margin: 0 auto;
   background-color: #fff;
   width: 375px;
-  border: 1px solid red; /* for check */
 }
 
 button {
   background: none;
   border: none;
-
-  /* border: 1px solid transparent; */
-
-  /* background-color: #fff; */
 }
 
 header {
@@ -82,8 +73,6 @@ header {
   font-weight: 400;
   padding: 0 15px;
   margin: 15px 0 0 0;
-
-  /* margin: 0 auto; */
 }
 
 .media {
@@ -96,10 +85,7 @@ header {
   margin: auto 0;
 }
 
-/* section works tonic1 */
-
 .btn {
-  color: #396df2;
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
@@ -113,20 +99,20 @@ header {
 }
 
 .btn-enabled-tonic1 {
-  color: #6070ff;  /* #396DF2 */
+  color: #396df2;
   background: #fff;
   border: 1px solid #7f8cff;
 }
 
 .btn-enabled-tonic1:hover {
   color: #fff;
-  background: #6070ff; /* * */
+  background: #6070ff;
   box-shadow: 0 8px 16px rgba(70, 85, 255, 0.25);
 }
 
 .btn-enabled-tonic1:active {
   color: #fff;
-  background: #2230d2;
+  background: #6070ff;
 }
 
 .btn-disable {
@@ -138,46 +124,46 @@ header {
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
+  padding: 0;
 }
 
 .tag-li-tonic1 {
-  padding: 6px 14px; /* orasini ochish */
+  padding: 6px 14px;
   background: #ebebff;
   border-radius: 8px;
-  letter-spacing: 0.05em; /* nimaga */
+  letter-spacing: 0.05em;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  list-style: none; /* nuqtalani oladi listdan */
+  list-style: none;
 }
 
 .tag-li-tonic1 a {
   color: #6070ff;
-  text-decoration: none;  /* tagidagi chiziqlarni o'chirish */
+  text-decoration: none;
 }
 
 .p-tonic1 {
   color: #344563;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 24px;
   margin: 12px 0;
-
-  /* color: red; for check */
 }
 
 .canopy-frm-tonic1 {
-  display: flex; /* bir qatorga turishadi */
+  display: flex;
   justify-items: start;
-  gap: 26px; /* orasidagi masofa */
+  gap: 26px;
 }
 
 .roles-tonic1 {
-  display: flex; /* Back End Dev va 2015 bir qatorga */
+  display: flex;
   justify-items: flex-end;
   gap: 26px;
+  padding: 0;
 }
 
 .role-tonic1 {
@@ -191,9 +177,9 @@ header {
 .client-tonic1 {
   color: #344563;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .card-title-tonic1 {
@@ -226,10 +212,10 @@ header {
 }
 
 .works-container-tonic1 {
-  display: grid; /* grid qo'yildi */
-  grid-template-columns: auto; /* nima */
-  grid-template-rows: repeat(4, auto); /* nima */
-  justify-items: center; /* hammasi centerga otdi */
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
   justify-content: center;
 }
 
@@ -278,8 +264,6 @@ header {
   font-weight: 400;
   padding: 0 15px;
   margin: 15px 0 0 0;
-
-  /* margin: 0 auto; */
 }
 
 .media-about-myself {
@@ -293,7 +277,6 @@ header {
 }
 
 .profile {
-  color: red;
   display: flex;
   flex-flow: column nowrap;
   padding: 15% 1.2rem 1.2rem 5%;
@@ -301,7 +284,7 @@ header {
   font-style: normal;
 }
 
-.skills-list { /* languages list */
+.skills-list {
   padding: 4px 12px;
   list-style: none;
   margin: 5px 0;
@@ -319,7 +302,7 @@ header {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.dropdown {  /* nima */
+.dropdown {
   padding: 2px 0;
   border: none;
 }
