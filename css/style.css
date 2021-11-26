@@ -162,7 +162,7 @@ header {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;  
+  line-height: 24px;
   margin: 12px 0;
 
   /* color: red; for check */
@@ -240,9 +240,6 @@ header {
   flex-flow: column nowrap;
   padding: 50px 1.2rem;
   margin: 0;
-  background-image: url(../images/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main-page-h1-about-myself {
