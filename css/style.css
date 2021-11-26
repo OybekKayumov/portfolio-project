@@ -1,9 +1,6 @@
+
 * {
   font-family: 'Poppins', sans-serif;
-
-  /* for check */
-
-  /* color: brown; */
 }
 
 h1 {
@@ -20,10 +17,6 @@ body {
 button {
   background: none;
   border: none;
-
-  /* border: 1px solid transparent; */
-
-  /* background-color: #fff; */
 }
 
 header {
@@ -81,8 +74,6 @@ header {
   font-weight: 400;
   padding: 0 15px;
   margin: 15px 0 0 0;
-
-  /* margin: 0 auto; */
 }
 
 .media {
@@ -93,4 +84,259 @@ header {
   list-style: none;
   padding: 20px 10px;
   margin: auto 0;
+}
+
+.btn {
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.btn-enabled-tonic1 {
+  color: #396df2;
+  background: #fff;
+  border: 1px solid #7f8cff;
+}
+
+.btn-enabled-tonic1:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(70, 85, 255, 0.25);
+}
+
+.btn-enabled-tonic1:active {
+  color: #fff;
+  background: #6070ff;
+}
+
+.btn-disable {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+}
+
+.tags-ul-tonic1 {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.tag-li-tonic1 {
+  padding: 6px 14px;
+  background: #ebebff;
+  border-radius: 8px;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  list-style: none;
+}
+
+.tag-li-tonic1 a {
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.p-tonic1 {
+  color: #344563;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+.canopy-frm-tonic1 {
+  display: flex;
+  justify-items: start;
+  gap: 26px;
+}
+
+.roles-tonic1 {
+  display: flex;
+  justify-items: flex-end;
+  gap: 26px;
+  padding: 0;
+}
+
+.role-tonic1 {
+  color: #7a869a;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.client-tonic1 {
+  color: #344563;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.card-title-tonic1 {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0;
+}
+
+.card-image-tonic1 {
+  width: 300px;
+  height: 225px;
+  left: 15px;
+  right: 15px;
+}
+
+.card-tonic1 {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 16px;
+  margin: 45px 0;
+  width: 330px;
+  height: auto;
+}
+
+.works-container-tonic1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  justify-content: center;
+}
+
+/* section about myself */
+
+/* .main-page-about-myself {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 50px 1.2rem;
+  margin: 0;
+} */
+
+.main-page-about-myself {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  background: #fff;
+  border-radius: 0 90px 0 0;
+  padding: 0;
+  margin: 0;
+}
+
+.main-page-h1-about-myself {
+  color: #172b4d;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  line-height: 52px;
+}
+
+.main-p-about-myself {
+  color: #344563;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 15px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.media-h2-about-myself {
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 15px;
+  margin: 15px 0 0 0;
+}
+
+.media-about-myself {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  align-items: center;
+  list-style: none;
+  padding: 20px 10px;
+  margin: auto 0;
+}
+
+.profile {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15% 1.2rem 1.2rem 5%;
+  margin: 0;
+  font-style: normal;
+}
+
+.skills-list {
+  padding: 4px 12px;
+  list-style: none;
+  margin: 5px 0;
+}
+
+.skill {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  align-items: center;
+  padding: 18px 0;
+  margin: 12px 0;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.dropdown {
+  padding: 2px 0;
+  border: none;
+}
+
+.icon {
+  float: right;
+  width: 12px;
+  padding-top: 8px;
+  height: 12px;
+}
+
+.language {
+  display: flex;
+  justify-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.lang-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.lang {
+  color: #253858;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  align-self: center;
+  text-decoration: none;
+  padding: 0 12px;
 }
