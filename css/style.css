@@ -235,10 +235,20 @@ header {
 
 /* section about myself */
 
-.main-page-about-myself {
+/* .main-page-about-myself {
   display: flex;
   flex-flow: column nowrap;
   padding: 50px 1.2rem;
+  margin: 0;
+} */
+
+.main-page-about-myself {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  background: #fff;
+  border-radius: 0 90px 0 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -280,4 +290,68 @@ header {
   list-style: none;
   padding: 20px 10px;
   margin: auto 0;
+}
+
+.profile {
+  color: red;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15% 1.2rem 1.2rem 5%;
+  margin: 0;
+  font-style: normal;
+}
+
+.skills-list { /* languages list */
+  padding: 4px 12px;
+  list-style: none;
+  margin: 5px 0;
+}
+
+.skill {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  align-items: center;
+  padding: 18px 0;
+  margin: 12px 0;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.dropdown {  /* nima */
+  padding: 2px 0;
+  border: none;
+}
+
+.icon {
+  float: right;
+  width: 12px;
+  padding-top: 8px;
+  height: 12px;
+}
+
+.language {
+  display: flex;
+  justify-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.ellipse-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.lang {
+  color: #253858;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  align-self: center;
+  text-decoration: none;
+  padding: 0 12px;
 }
