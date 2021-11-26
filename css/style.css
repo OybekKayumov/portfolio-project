@@ -1,3 +1,4 @@
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -187,6 +188,7 @@ header {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
+  line-height: 44px;
   margin: 12px 0;
 }
 
