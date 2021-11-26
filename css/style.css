@@ -340,7 +340,7 @@ header {
   margin: 12px 0;
 }
 
-.ellipse-logo {
+.lang-logo {
   width: 50px;
   height: 50px;
 }
@@ -348,7 +348,7 @@ header {
 .lang {
   color: #253858;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
   line-height: 15px;
   align-self: center;
