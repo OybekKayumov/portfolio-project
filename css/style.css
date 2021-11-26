@@ -99,11 +99,11 @@ header {
 /* section works tonic1 */
 
 .btn {
-  color: #6070ff;
+  color: #396df2;
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -113,7 +113,7 @@ header {
 }
 
 .btn-enabled-tonic1 {
-  color: #6070ff;
+  color: #6070ff;  /* #396DF2 */
   background: #fff;
   border: 1px solid #7f8cff;
 }
@@ -129,6 +129,11 @@ header {
   background: #2230d2;
 }
 
+.btn-disable {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+}
+
 .tags-ul-tonic1 {
   display: flex;
   flex-flow: row nowrap;
@@ -136,8 +141,8 @@ header {
 }
 
 .tag-li-tonic1 {
-  padding: 4px 12px; /* orasini ochish */
-  background: #ebebeb;
+  padding: 6px 14px; /* orasini ochish */
+  background: #ebebff;
   border-radius: 8px;
   color: #6070ff;
   letter-spacing: 0.05em; /* nimaga */
@@ -152,27 +157,27 @@ header {
   text-decoration: none;  /* tagidagi chiziqlarni o'chirish */
 }
 
-.description-p-tonic1 {
+.p-tonic1 {
+  color: #344563;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
-  color: #344563;
+  line-height: 24px;  
   margin: 12px 0;
 
   /* color: red; for check */
 }
 
-.frame2-tonic1 {
+.canopy-frm-tonic1 {
   display: flex; /* bir qatorga turishadi */
-  justify-items: center;
-  gap: 30px; /* orasidagi masofa */
+  justify-items: start;
+  gap: 26px; /* orasidagi masofa */
 }
 
 .roles-tonic1 {
   display: flex; /* Back End Dev va 2015 bir qatorga */
-  justify-items: end;
-  gap: 30px;
+  justify-items: flex-end;
+  gap: 26px;
 }
 
 .role-tonic1 {
@@ -195,8 +200,8 @@ header {
   color: #172b4d;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  margin: 14px 0;
+  font-size: 32px;
+  margin: 12px 0;
 }
 
 .card-image-tonic1 {
@@ -210,12 +215,12 @@ header {
   background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
-  border-radius: 14px;
+  border-radius: 16px;
   flex: none;
   order: 0;
   flex-grow: 0;
   padding: 16px;
-  margin: 40px 0;
+  margin: 45px 0;
   width: 330px;
   height: auto;
 }
@@ -223,7 +228,7 @@ header {
 .works-container-tonic1 {
   display: grid; /* grid qo'yildi */
   grid-template-columns: auto; /* nima */
-  grid-template-rows: auto auto auto auto; /* nima */
+  grid-template-rows: repeat(4, auto); /* nima */
   justify-items: center; /* hammasi centerga otdi */
   justify-content: center;
 }
