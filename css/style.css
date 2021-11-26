@@ -94,3 +94,55 @@ header {
   padding: 20px 10px;
   margin: auto 0;
 }
+
+/* section about myself */
+
+.main-page-about-myself {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 50px 1.2rem;
+  margin: 0;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-page-h1-about-myself {
+  color: #172b4d;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  line-height: 52px;
+}
+
+.main-p-about-myself {
+  color: #344563;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 15px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.media-h2-about-myself {
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 15px;
+  margin: 15px 0 0 0;
+
+  /* margin: 0 auto; */
+}
+
+.media-about-myself {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  align-items: center;
+  list-style: none;
+  padding: 20px 10px;
+  margin: auto 0;
+}
