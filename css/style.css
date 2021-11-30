@@ -340,3 +340,60 @@ header {
   text-decoration: none;
   padding: 0 12px;
 }
+
+/* contact section */
+
+/*
+  background: #FFFFFF;
+  background: #EBEBFF;
+  background: #FFFFFF;
+  background: #CFD8DC;
+  background: #7F8CFF;
+  background: #0D151E; */
+
+/* .main-p-about-myself {
+  color: #344563;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 15px;
+  margin: 0;
+  line-height: 30px;
+}   */
+
+.profile-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15% 1.2rem 1.2rem 5%;
+  margin: 0;
+  font-style: normal;
+}
+
+.h1-contact {
+  color: #172b4d;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  line-height: 52px;
+
+  /* justify-content: center; */
+
+  /* align-items: center; */
+}
+
+.main-p-about-myself-contact {
+  color: #000;
+}
+
+.p-about-myself-contact {
+  border: 2px solid goldenrod;
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 30px;
+  padding: 15px;
+  margin: 0;
+}
