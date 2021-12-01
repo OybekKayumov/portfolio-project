@@ -41,9 +41,10 @@ header {
 .main-page {
   display: flex;
   flex-flow: column nowrap;
-  padding: 50px 1.2rem;
+  font-style: normal;
+  padding: 15% 1.2rem;
   margin: 0;
-  background-image: url(../images/bg.png);
+  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,7 +52,7 @@ header {
 .main-page-h1 {
   color: #172b4d;
   font-style: normal;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   padding: 10px;
   margin: 0;
@@ -60,9 +61,9 @@ header {
 
 .main-p {
   color: #344563;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   padding: 15px;
   margin: 0;
   line-height: 30px;
@@ -90,13 +91,13 @@ header {
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.05em;
-  padding: 15px;
-  margin: 0 10px;
+  letter-spacing: 0.04em;
+  padding: 12px;
+  margin: 12px 0;
 }
 
 .btn-enabled-tonic1 {
@@ -129,14 +130,14 @@ header {
 }
 
 .tag-li-tonic1 {
-  padding: 6px 14px;
+  padding: 5px 12px;
   background: #ebebff;
   border-radius: 8px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
   list-style: none;
 }
 
@@ -240,17 +241,17 @@ header {
   margin: 0;
 }
 
-.main-page-h1-about-myself {
+.h1-about-myself {
   color: #172b4d;
   font-style: normal;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   padding: 10px;
   margin: 0;
   line-height: 52px;
 }
 
-.main-p-about-myself {
+.p-about-myself {
   color: #344563;
   font-size: 20px;
   font-style: normal;
@@ -335,8 +336,101 @@ header {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 20px;
   align-self: center;
   text-decoration: none;
   padding: 0 12px;
+}
+
+.container-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 28px;
+  border-radius: 88px 0 0 0;
+  background-color: #6070fe;
+  padding-bottom: 30px;
+  background-image: url(/images/bg-contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+
+.h2-contact-me {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 50px;
+  text-align: center;
+  margin: 90px 0 0 0;
+}
+
+.p-contact-info {
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  padding: 10px 22px;
+}
+
+.contact {
+  margin: 2px 8px;
+  padding: 8px;
+}
+
+/* .container-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 28px;
+  border-radius: 88px 0 0 0;
+  background-color: #6070fe;
+  padding-bottom: 30px;
+  background-image: url(/images/bg-contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+} */
+
+.form-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+}
+
+.form-contact input {
+  background: #fff;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 340px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.form-contact textarea {
+  background: #fff;
+  color: #b3bac5;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 340px;
+  height: 165px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.btn-contact {
+  color: #6070ff;
+  text-align: left;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
 }
