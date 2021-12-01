@@ -91,7 +91,7 @@ header {
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -380,28 +380,50 @@ header {
   padding: 8px;
 }
 
+/* .container-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 28px;
+  border-radius: 88px 0 0 0;
+  background-color: #6070fe;
+  padding-bottom: 30px;
+  background-image: url(/images/bg-contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+} */
+
+.form-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+}
+
 .form-contact input {
   background: #fff;
   color: #172b4d;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 325px;
-  height: 50px;
+  width: 340px;
+  height: 60px;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
   line-height: 20px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .form-contact textarea {
   background: #fff;
+  color: #b3bac5;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 325px;
+  width: 340px;
   height: 165px;
   padding: 8px;
+  box-sizing: border-box;
 }
 
 .btn-contact {
@@ -410,4 +432,5 @@ header {
   background: #fff;
   border: none;
   border-radius: 8px;
+  margin-top: 20px;
 }
