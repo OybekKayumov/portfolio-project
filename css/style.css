@@ -222,15 +222,6 @@ header {
   justify-content: center;
 }
 
-/* section about myself */
-
-/* .main-page-about-myself {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 50px 1.2rem;
-  margin: 0;
-} */
-
 .main-page-about-myself {
   display: grid;
   grid-template-columns: auto;
@@ -349,7 +340,7 @@ header {
   border-radius: 88px 0 0 0;
   background-color: #6070fe;
   padding-bottom: 30px;
-  background-image: url(/images/bg-contact.png);
+  background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -379,19 +370,6 @@ header {
   margin: 2px 8px;
   padding: 8px;
 }
-
-/* .container-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  row-gap: 28px;
-  border-radius: 88px 0 0 0;
-  background-color: #6070fe;
-  padding-bottom: 30px;
-  background-image: url(/images/bg-contact.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: right;
-} */
 
 .form-contact {
   display: flex;
