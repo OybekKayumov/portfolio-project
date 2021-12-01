@@ -412,3 +412,18 @@ header {
   border-radius: 8px;
   margin-top: 20px;
 }
+
+#line {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  position: relative;
+  left: calc(50% - 67px - 0.5px);
+  border-radius: 10px;
+  z-index: 1;
+  top: 25px;
+
+  /* left: calc(50% - 134px/2 - 0.5px); */
+
+  /* left: 100px; */
+}
