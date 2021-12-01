@@ -295,44 +295,43 @@
 
 
     <!-- start contact  -->
-
     
+    <footer>
 
-    <section class="contact">
-        <div class="profile-contact">
-            <div class="h1-contact">
-                <h1>Contact me</h1>
-            </div>
-            <div>
-                <p class="p-about-myself-contact">
-                    If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
-                </p>
-            </div>
-
-            <form class="contact-form" action="https://formspree.io/f/xgedwnlv" method="POST">
+        <section class="footer-container-contact">
+            <!-- <div class="profile-contact"> -->
+                <!-- <div class="h1-contact"> -->
+                <div>    
+                    <h2 class="h2-contact-me">Contact me</h2>
                 
-                <!-- your other form fields go here -->
+                    <p class="p-contact-info">
+                        If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
+                    </p>
+                </div>
 
-                <label for="fname"></label>
-                <input type="text" id="fname" name="firstname" placeholder="Yeremias">
-                
-                <label for="email">
-                    <input type="email" id="email" placeholder="natajayanj14@gmail.com">
-                </label>
+                <div class="contact">
 
-                <label>
-                    <textarea name="message"></textarea>
-                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
-                </label>
+                    <form class="form-contact" action="https://formspree.io/f/xgedwnlv" method="POST">                    
 
-            </form>
-        
-            <div>
-                <button class="btn btn-enabled-tonic1"> Get It Touch</button>
-            </div>
-        
-        </div> 
-    </section>
+                        <input type="text" name="firstname" maxlength="30" placeholder="Yeremias" required>                        
+                        
+                        <input type="email" name="email" placeholder="natajayanj14@gmail.com" required>
+                        
+                        <textarea name="message" maxlength="500" placeholder="Write your message here" required>                            
+                        </textarea>
+                    
+                        <button 
+                            type="submit" class="btn btn-enable btn-contact">Get It Touch
+                        </button>
+                    </form>
+
+                </div>
+            
+            <!-- </div>  -->
+
+        </section>
+
+    </footer>
 
 </body>
 </html>

@@ -401,3 +401,58 @@ header {
   padding: 15px;
   margin: 0;
 }
+
+/* jns */
+
+.footer-container-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 30px;
+  border-radius: 90px 0 0 0;
+  background-color: #6070fe;
+  padding-bottom: 30px;
+  background-image: url(/images/bg-contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+
+.h2-contact-me {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 50px;
+  text-align: center;
+  margin: 90px 0 0 0;
+}
+
+.p-contact-info {
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  padding: 8px 24px;
+}
+
+.contact {
+  margin: 1px 8px;
+  padding: 8px;
+}
+
+.form-contact input {
+  background: #fff;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 325px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
