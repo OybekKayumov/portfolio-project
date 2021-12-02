@@ -42,6 +42,27 @@ header {
   font-style: normal;
   text-decoration: none;
   font-size: 20px;
+  position: relative;
+  text-shadow:
+    0 0  50px rgb(0, 238, 255),
+    0 0 150px rgb(255, 0, 21),
+    0 0 200px rgb(255, 208, 0),
+    0 0 250px rgb(0, 60, 255);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(180deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .main-page {
@@ -73,6 +94,20 @@ header {
   padding: 15px;
   margin: 0;
   line-height: 30px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .media-h2 {
