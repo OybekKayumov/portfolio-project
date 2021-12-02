@@ -11,7 +11,8 @@ body {
   padding: 0;
   margin: 0 auto;
   background-color: #fff;
-  width: 375px;
+
+  /* width: 375px; */
 }
 
 button {
@@ -26,6 +27,11 @@ header {
   align-items: baseline;
   padding: 15px;
   margin-top: 10px;
+}
+
+.menu {
+  display: none;
+  visibility: hidden;
 }
 
 .logo {
@@ -122,14 +128,15 @@ header {
   border: 1px solid #c1c7d0;
 }
 
-.tags-ul-tonic1 {
+.tags-ul {
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
   padding: 0;
 }
 
-.tag-li-tonic1 {
+.tag {
+  color: #6070ff;
   padding: 5px 12px;
   background: #ebebff;
   border-radius: 8px;
@@ -141,12 +148,12 @@ header {
   list-style: none;
 }
 
-.tag-li-tonic1 a {
+.tag a {
   color: #6070ff;
   text-decoration: none;
 }
 
-.p-tonic1 {
+.p-deskribe {
   color: #344563;
   font-style: normal;
   font-weight: normal;
@@ -155,20 +162,20 @@ header {
   margin: 12px 0;
 }
 
-.canopy-frm-tonic1 {
+.canopy-part {
   display: flex;
   justify-items: start;
   gap: 26px;
 }
 
-.roles-tonic1 {
+.roles-ul {
   display: flex;
   justify-items: flex-end;
   gap: 26px;
   padding: 0;
 }
 
-.role-tonic1 {
+.role {
   color: #7a869a;
   font-style: normal;
   font-weight: 700;
@@ -176,7 +183,7 @@ header {
   line-height: 16px;
 }
 
-.client-tonic1 {
+.canopy {
   color: #344563;
   font-style: normal;
   font-weight: bold;
@@ -184,7 +191,7 @@ header {
   line-height: 20px;
 }
 
-.card-title-tonic1 {
+.card-title {
   color: #172b4d;
   font-style: normal;
   font-weight: bold;
@@ -200,36 +207,24 @@ header {
   right: 15px;
 }
 
-.card-tonic1 {
+.card {
   background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   padding: 16px;
-  margin: 45px 0;
-  width: 330px;
+  margin: 44px 0;
+  width: 327px;
   height: auto;
 }
 
-.works-container-tonic1 {
+.works-container {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(4, auto);
   justify-items: center;
   justify-content: center;
 }
-
-/* section about myself */
-
-/* .main-page-about-myself {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 50px 1.2rem;
-  margin: 0;
-} */
 
 .main-page-about-myself {
   display: grid;
@@ -349,7 +344,7 @@ header {
   border-radius: 88px 0 0 0;
   background-color: #6070fe;
   padding-bottom: 30px;
-  background-image: url(/images/bg-contact.png);
+  background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -379,19 +374,6 @@ header {
   margin: 2px 8px;
   padding: 8px;
 }
-
-/* .container-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  row-gap: 28px;
-  border-radius: 88px 0 0 0;
-  background-color: #6070fe;
-  padding-bottom: 30px;
-  background-image: url(/images/bg-contact.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: right;
-} */
 
 .form-contact {
   display: flex;
@@ -433,4 +415,186 @@ header {
   border: none;
   border-radius: 8px;
   margin-top: 20px;
+}
+
+#line {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  position: relative;
+  left: calc(50% - 67px - 0.5px);
+  border-radius: 10px;
+  z-index: 1;
+  top: 25px;
+
+  /* left: calc(50% - 134px/2 - 0.5px); */
+
+  /* left: 100px; */
+}
+
+@media screen and (min-device-width: 992px) {
+  .btn-hamburg {
+    visibility: hidden;
+    display: none;
+  }
+
+  .menu {
+    visibility: visible;
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+  }
+
+  .menu-item {
+    color: #344563;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    padding: 12px;
+    margin: 0 10px;
+  }
+
+  header {
+    background-color: #fff;
+    padding: 1px 6.2rem;
+  }
+
+  .main-page {
+    font-size: 20px;
+    font-style: normal;
+    background-color: #fff;
+    background-image: url("../images/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14% 14%;
+    border-radius: 0 0 0 145px;
+  }
+
+  .main-page-h1 {
+    line-height: 52px;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .main-p {
+    color: #344563;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 8px 0;
+  }
+
+  .card {
+    width: auto;
+    border-radius: 24px;
+    margin: 5%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .card-info {
+    padding: 1rem 2.5rem;
+  }
+
+  .card-image-tonic1 {
+    width: auto;
+    height: auto;
+    left: 16px;
+    right: 16px;
+  }
+
+  .img-right {
+    order: 2;
+  }
+
+  .main-page-about-myself {
+    grid-template-columns: 45% auto;
+    grid-gap: 20px;
+    padding: 142px 165px;
+  }
+
+  .about-myself-profile {
+    padding: 0;
+  }
+
+  .skill {
+    padding-top: 50px;
+  }
+
+  .languages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    padding: 0;
+  }
+
+  .language {
+    flex-flow: column;
+    align-content: flex-start;
+    margin: 12px;
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+  }
+
+  .lang {
+    padding: 8px 0 0 0;
+    font-size: 15px;
+    text-align: left;
+    align-self: start;
+  }
+
+  .lang-logo {
+    padding: 16px 14px;
+  }
+
+  .container-footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-image: url("/images/bg-cont-frm-shapes.png");
+  }
+
+  .contact-form input {
+    width: 450px;
+    height: 50px;
+    border-radius: 2px;
+  }
+
+  .contact-form textarea {
+    width: 448px;
+    height: 170px;
+    border-radius: 2px;
+  }
+
+  .p-contact-info {
+    width: 570px;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 570px;
+  }
+
+  #line {
+    width: 134px;
+    height: 5px;
+    background-color: #0d151e;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    top: 25px;
+    left: 0;
+  }
 }
