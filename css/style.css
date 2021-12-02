@@ -200,7 +200,7 @@ header {
   margin: 12px 0;
 }
 
-.card-image1 {
+.card-image-tonic1 {
   width: 300px;
   height: 225px;
   left: 15px;
@@ -504,7 +504,7 @@ header {
     padding: 1rem 2.5rem;
   }
 
-  .card-image1 {
+  .card-image-tonic1 {
     width: auto;
     height: auto;
     left: 16px;
