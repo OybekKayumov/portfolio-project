@@ -43,15 +43,16 @@ header {
   text-decoration: none;
   font-size: 20px;
   position: relative;
-  text-shadow:
+
+  /* text-shadow:
     0 0  50px rgb(0, 238, 255),
     0 0 150px rgb(255, 0, 21),
     0 0 200px rgb(255, 208, 0),
     0 0 250px rgb(0, 60, 255);
-  animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite; */
 }
 
-@keyframes animate {
+/* @keyframes animate {
   0% {
     filter: hue-rotate(0deg);
   }
@@ -63,7 +64,7 @@ header {
   100% {
     filter: hue-rotate(360deg);
   }
-}
+} */
 
 .main-page {
   display: flex;
@@ -94,11 +95,12 @@ header {
   padding: 15px;
   margin: 0;
   line-height: 30px;
-  animation-duration: 3s;
-  animation-name: slidein;
+
+  /* animation-duration: 3s;
+  animation-name: slidein; */
 }
 
-@keyframes slidein {
+/* @keyframes slidein {
   from {
     margin-left: 100%;
     width: 300%;
@@ -108,7 +110,7 @@ header {
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 
 .media-h2 {
   color: #7f8cff;
