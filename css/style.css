@@ -11,8 +11,7 @@ body {
   padding: 0;
   margin: 0 auto;
   background-color: #fff;
-
-  /* width: 375px; */
+  width: 375px;
 }
 
 button {
@@ -271,6 +270,7 @@ header {
   border-radius: 0 90px 0 0;
   padding: 0;
   margin: 0;
+  border: 5px solid goldenrod;
 }
 
 .h1-about-myself {
@@ -311,12 +311,25 @@ header {
   margin: auto 0;
 }
 
-.profile {
-  display: flex;
+/* .profile { */
+.mp-about-myself-profile {
+  /* display: flex;
   flex-flow: column nowrap;
   padding: 15% 1.2rem 1.2rem 5%;
   margin: 0;
+  font-style: normal;*/
+  border: 5px solid rgb(255, 153, 0);
+  display: flex;
+  flex-flow: column nowrap;
   font-style: normal;
+  padding: 15% 1.2rem;
+  margin: 0;
+}
+
+.skills {
+  border: 3px solid blue;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .skills-list {
@@ -469,7 +482,7 @@ header {
   /* left: 100px; */
 }
 
-@media screen and (min-device-width: 992px) {
+/* @media screen and (min-device-width: 992px) {
   .btn-hamburg {
     visibility: hidden;
     display: none;
@@ -558,8 +571,10 @@ header {
     padding: 142px 165px;
   }
 
-  .about-myself-profile {
+  .about-myself-profile { nado commentirovat
+  .mp-about-myself-profile {
     padding: 0;
+    border: 2px green solid;
   }
 
   .skill {
@@ -634,4 +649,4 @@ header {
     top: 25px;
     left: 0;
   }
-}
+} */
