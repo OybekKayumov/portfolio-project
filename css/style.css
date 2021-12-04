@@ -1,6 +1,8 @@
 
 * {
   font-family: 'Poppins', sans-serif;
+
+  /* background-color: #fff; */
 }
 
 h1 {
@@ -10,8 +12,9 @@ h1 {
 body {
   padding: 0;
   margin: 0 auto;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   width: 375px;
+  border: 2px solid lightgreen;
 }
 
 button {
@@ -314,13 +317,7 @@ header {
   margin: auto 0;
 }
 
-/* .profile { */
 .mp-about-myself-profile {
-  /* display: flex;
-  flex-flow: column nowrap;
-  padding: 15% 1.2rem 1.2rem 5%;
-  margin: 0;
-  font-style: normal;*/
   border: 5px solid rgb(255, 153, 0);
   display: flex;
   flex-flow: column nowrap;
@@ -328,6 +325,13 @@ header {
   padding: 15% 1.2rem;
   margin: 0;
   background-image: url("../images/base-about-my-self.png");
+
+  /*
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15% 1.2rem 1.2rem 5%;
+  margin: 0;
+  font-style: normal; */
 }
 
 .skills {
@@ -395,9 +399,10 @@ header {
   display: flex;
   flex-flow: column nowrap;
   row-gap: 28px;
-  border-radius: 88px 0 0 0;
+  border-radius: 80px 0 0 0;
   background-color: #6070fe;
   padding-bottom: 30px;
+  margin-top: 30px;
   background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
