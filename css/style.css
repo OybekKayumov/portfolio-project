@@ -11,7 +11,8 @@ body {
   padding: 0;
   margin: 0 auto;
   background: #f5f5f5;
-  border: 2px solid lightgreen;
+
+  /* border: 2px solid lightgreen; */
 
   /* width: 375px; */
 }
@@ -468,7 +469,6 @@ header {
   display: none;
 }
 
-/* @media screen and (min-device-width: 992px) { */
 @media screen and (min-width: 992px) {
   .image1 {
     display: none;
@@ -503,8 +503,6 @@ header {
     padding: 0;
     margin: 0 10px;
   }
-
-  /* ishi bor fixed notugri */
 
   header {
     background-color: #fff;
