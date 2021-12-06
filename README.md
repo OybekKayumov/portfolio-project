@@ -6,6 +6,10 @@
 
 ![app-screenshot](./images/1-proj-mobile.png)
 
+## Link to the online version
+
+[Portfolio Oybek Kayumov](https://github.com/OybekKayumov)
+
 ## Built With
 
 - HTML
@@ -15,9 +19,9 @@
 
 to set this project up please run these commands:
 
-`git clone `
+`git clone https://github.com/OybekKayumov/portfolio-project.git`
 
-`cd `
+`cd portfolio-project`
 
 ## 👤 Author
 
