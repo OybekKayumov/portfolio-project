@@ -10,7 +10,9 @@ h1 {
 body {
   padding: 0;
   margin: 0 auto;
-  background-color: #fff;
+  background: #f5f5f5;
+
+  /* border: 2px solid lightgreen; */
 
   /* width: 375px; */
 }
@@ -25,6 +27,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: baseline;
+  background: #fff;
   padding: 15px;
   margin-top: 10px;
 }
@@ -32,6 +35,12 @@ header {
 .menu {
   display: none;
   visibility: hidden;
+}
+
+.btn-hamburg {
+  /* display: none; */
+
+  /* visibility: visible; */
 }
 
 .logo {
@@ -43,37 +52,20 @@ header {
   text-decoration: none;
   font-size: 20px;
   position: relative;
-  text-shadow:
-    0 0  50px rgb(0, 238, 255),
-    0 0 150px rgb(255, 0, 21),
-    0 0 200px rgb(255, 208, 0),
-    0 0 250px rgb(0, 60, 255);
-  animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    filter: hue-rotate(180deg);
-  }
-
-  100% {
-    filter: hue-rotate(360deg);
-  }
 }
 
 .main-page {
   display: flex;
   flex-flow: column nowrap;
+  background: #fff;
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/header-shapes-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 100px;
+  height: 605px;
 }
 
 .main-page-h1 {
@@ -81,7 +73,7 @@ header {
   font-style: normal;
   font-size: 30px;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   margin: 0;
   line-height: 52px;
 }
@@ -94,28 +86,15 @@ header {
   padding: 15px;
   margin: 0;
   line-height: 30px;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 
 .media-h2 {
   color: #7f8cff;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   padding: 0 15px;
-  margin: 15px 0 0 0;
+  margin: 15px 0 15px 0;
 }
 
 .media {
@@ -124,8 +103,8 @@ header {
   column-gap: 20px;
   align-items: center;
   list-style: none;
-  padding: 20px 10px;
-  margin: auto 0;
+  padding: 5px 15px;
+  margin: 0;
 }
 
 .btn {
@@ -161,6 +140,12 @@ header {
 .btn-disable {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
+}
+
+.card-body {
+  /* display: flex; */
+
+  /* flex-flow: column nowrap; */
 }
 
 .tags-ul {
@@ -269,6 +254,8 @@ header {
   border-radius: 0 90px 0 0;
   padding: 0;
   margin: 0;
+
+  /* border: 5px solid goldenrod; */
 }
 
 .h1-about-myself {
@@ -276,7 +263,7 @@ header {
   font-style: normal;
   font-size: 32px;
   font-weight: bold;
-  padding: 10px;
+  padding: 0 0 0 10px;
   margin: 0;
   line-height: 52px;
 }
@@ -286,7 +273,7 @@ header {
   font-size: 20px;
   font-style: normal;
   font-weight: normal;
-  padding: 15px;
+  padding: 10px;
   margin: 0;
   line-height: 30px;
 }
@@ -295,7 +282,7 @@ header {
   color: #7f8cff;
   font-style: normal;
   font-weight: 400;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 15px 0 0 0;
 }
 
@@ -309,12 +296,21 @@ header {
   margin: auto 0;
 }
 
-.profile {
+.mp-about-myself-profile {
+  /* border: 5px solid rgb(255, 153, 0); */
   display: flex;
   flex-flow: column nowrap;
-  padding: 15% 1.2rem 1.2rem 5%;
-  margin: 0;
   font-style: normal;
+  padding: 15% 1.2rem;
+  margin: 0;
+  background-image: url("../images/base-about-my-self.png");
+  border-radius: 0 90px 0 0;
+}
+
+.skills {
+  /* border: 3px solid blue; */
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .skills-list {
@@ -376,9 +372,10 @@ header {
   display: flex;
   flex-flow: column nowrap;
   row-gap: 28px;
-  border-radius: 88px 0 0 0;
+  border-radius: 80px 0 0 0;
   background-color: #6070fe;
   padding-bottom: 30px;
+  margin-top: 30px;
   background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -453,6 +450,8 @@ header {
 }
 
 #line {
+  /* .shape1 { */
+
   width: 134px;
   height: 5px;
   background-color: #0d151e;
@@ -467,9 +466,21 @@ header {
   /* left: 100px; */
 }
 
-@media screen and (min-device-width: 992px) {
+.image2 {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    display: block;
+  }
+
   .btn-hamburg {
-    visibility: hidden;
+    visibility: visible;
     display: none;
   }
 
@@ -478,6 +489,7 @@ header {
     display: flex;
     flex-flow: row;
     list-style: none;
+    padding-right: 140px;
   }
 
   .menu-item {
@@ -489,13 +501,17 @@ header {
     align-items: center;
     text-align: center;
     line-height: 20px;
-    padding: 12px;
+    padding: 0;
     margin: 0 10px;
   }
 
   header {
     background-color: #fff;
-    padding: 1px 6.2rem;
+    padding: 2px 2rem;
+    padding-top: 0;
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
   }
 
   .main-page {
@@ -505,8 +521,8 @@ header {
     background-image: url("../images/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 14% 14%;
-    border-radius: 0 0 0 145px;
+    padding: 5% 5%;
+    border-radius: 0 0 0 95px;
   }
 
   .main-page-h1 {
@@ -514,14 +530,24 @@ header {
     font-size: 34px;
     font-weight: bold;
     margin: 10px 0;
+    padding-left: 180px;
   }
 
   .main-p {
     color: #344563;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 30px;
     margin: 8px 0;
+    padding-left: 180px;
+  }
+
+  .media-h2 {
+    padding-left: 180px;
+  }
+
+  .media {
+    padding-left: 180px;
   }
 
   .card {
@@ -536,7 +562,10 @@ header {
   }
 
   .card-info {
-    padding: 1rem 2.5rem;
+    /* border: 2px solid slateblue; */
+    display: flex;
+    flex-flow: column;
+    padding-left: 5%;
   }
 
   .card-image-tonic1 {
@@ -544,6 +573,8 @@ header {
     height: auto;
     left: 16px;
     right: 16px;
+
+    /* background-image: url("../images/desk-works1.png"); */
   }
 
   .img-right {
@@ -556,12 +587,20 @@ header {
     padding: 142px 165px;
   }
 
-  .about-myself-profile {
+  .mp-about-myself-profile {
+    /* border: 2px green solid; */
     padding: 0;
   }
 
-  .skill {
+  .skills {
+    /* border: 3px solid magenta; */
+    display: flex;
+    flex-flow: column nowrap;
     padding-top: 50px;
+  }
+
+  .skill {
+    /* padding-top: 50px; */
   }
 
   .languages {
@@ -623,6 +662,8 @@ header {
   }
 
   #line {
+    /* .shape1 { */
+
     width: 134px;
     height: 5px;
     background-color: #0d151e;
