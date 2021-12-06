@@ -464,176 +464,6 @@ header {
   /* left: 100px; */
 }
 
-/*
-
-@media screen and (min-device-width: 992px) {
-  .btn-hamburg {
-    visibility: hidden;
-    display: none;
-  }
-
-  .menu {
-    visibility: visible;
-    display: flex;
-    flex-flow: row;
-    list-style: none;
-  }
-
-  .menu-item {
-    color: #344563;
-    font-size: 15px;
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    align-items: center;
-    text-align: center;
-    line-height: 20px;
-    padding: 12px;
-    margin: 0 10px;
-  }
-
-  header {
-    background-color: #fff;
-    padding: 1px 6.2rem;
-  }
-
-  .main-page {
-    font-size: 20px;
-    font-style: normal;
-    background-color: #fff;
-    background-image: url("../images/bg-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 14% 14%;
-    border-radius: 0 0 0 145px;
-  }
-
-  .main-page-h1 {
-    line-height: 52px;
-    font-size: 34px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-
-  .main-p {
-    color: #344563;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    margin: 8px 0;
-  }
-
-  .card {
-    width: auto;
-    border-radius: 24px;
-    margin: 5%;
-  }
-
-  .card-body {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-
-  .card-info {
-    padding: 1rem 2.5rem;
-  }
-
-  .card-image-tonic1 {
-    width: auto;
-    height: auto;
-    left: 16px;
-    right: 16px;
-  }
-
-  .img-right {
-    order: 2;
-  }
-
-  .main-page-about-myself {
-    grid-template-columns: 45% auto;
-    grid-gap: 20px;
-    padding: 142px 165px;
-  }
-
-  .mp-about-myself-profile {
-    padding: 0;
-    border: 2px green solid;
-  }
-
-  .skill {
-    padding-top: 50px;
-  }
-
-  .languages {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;
-    padding: 0;
-  }
-
-  .language {
-    flex-flow: column;
-    align-content: flex-start;
-    margin: 12px;
-    height: 120px;
-    width: 120px;
-    border-radius: 8px;
-  }
-
-  .lang {
-    padding: 8px 0 0 0;
-    font-size: 15px;
-    text-align: left;
-    align-self: start;
-  }
-
-  .lang-logo {
-    padding: 16px 14px;
-  }
-
-  .container-footer {
-    padding-left: 10%;
-    padding-right: 10%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-image: url("/images/bg-cont-frm-shapes.png");
-  }
-
-  .contact-form input {
-    width: 450px;
-    height: 50px;
-    border-radius: 2px;
-  }
-
-  .contact-form textarea {
-    width: 448px;
-    height: 170px;
-    border-radius: 2px;
-  }
-
-  .p-contact-info {
-    width: 570px;
-    text-align: center;
-  }
-
-  .contact-form {
-    width: 570px;
-  }
-
-  #line {
-    width: 134px;
-    height: 5px;
-    background-color: #0d151e;
-    position: relative;
-    border-radius: 10px;
-    z-index: 1;
-    top: 25px;
-    left: 0;
-  }
-} */
-
 .image2 {
   display: none;
 }
@@ -658,6 +488,7 @@ header {
     display: flex;
     flex-flow: row;
     list-style: none;
+    padding-right: 140px;
   }
 
   .menu-item {
@@ -681,7 +512,7 @@ header {
     padding-top: 0;
     margin-top: 0;
     position: fixed;
-    width: 80%;
+    width: 100%;
   }
 
   .main-page {
