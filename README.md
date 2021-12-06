@@ -8,7 +8,7 @@
 
 ## Link to the online version
 
-[Online Portfolio Oybek Kayumov](https://oybekkayumov.github.io/portfolio-project/)
+This site was built using [GitHub Pages](https://oybekkayumov.github.io/portfolio-project/)
 
 ## Built With
 
