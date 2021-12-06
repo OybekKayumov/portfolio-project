@@ -71,7 +71,7 @@ header {
   font-style: normal;
   font-size: 30px;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   margin: 0;
   line-height: 52px;
 }
@@ -88,10 +88,11 @@ header {
 
 .media-h2 {
   color: #7f8cff;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   padding: 0 15px;
-  margin: 15px 0 0 0;
+  margin: 15px 0 15px 0;
 }
 
 .media {
@@ -100,7 +101,7 @@ header {
   column-gap: 20px;
   align-items: center;
   list-style: none;
-  padding: 20px 10px;
+  padding: 5px 15px;
   margin: auto 0;
 }
 
@@ -260,7 +261,7 @@ header {
   font-style: normal;
   font-size: 32px;
   font-weight: bold;
-  padding: 10px;
+  padding: 0 0 0 10px;
   margin: 0;
   line-height: 52px;
 }
@@ -270,7 +271,7 @@ header {
   font-size: 20px;
   font-style: normal;
   font-weight: normal;
-  padding: 15px;
+  padding: 10px;
   margin: 0;
   line-height: 30px;
 }
@@ -279,7 +280,7 @@ header {
   color: #7f8cff;
   font-style: normal;
   font-weight: 400;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 15px 0 0 0;
 }
 
@@ -301,6 +302,7 @@ header {
   padding: 15% 1.2rem;
   margin: 0;
   background-image: url("../images/base-about-my-self.png");
+  border-radius: 0 90px 0 0;
 }
 
 .skills {
@@ -679,6 +681,7 @@ header {
     padding-top: 0;
     margin-top: 0;
     position: fixed;
+    width: 80%;
   }
 
   .main-page {
@@ -722,6 +725,7 @@ header {
     /* border: 2px solid slateblue; */
     display: flex;
     flex-flow: column;
+    padding-left: 5%;
   }
 
   .card-image-tonic1 {
