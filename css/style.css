@@ -64,7 +64,8 @@ header {
   background-image: url("../images/header-shapes-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 100px;
+  height: 605px;
 }
 
 .main-page-h1 {
@@ -103,7 +104,7 @@ header {
   align-items: center;
   list-style: none;
   padding: 5px 15px;
-  margin: auto 0;
+  margin: 0;
 }
 
 .btn {
@@ -529,6 +530,7 @@ header {
     font-size: 34px;
     font-weight: bold;
     margin: 10px 0;
+    padding-left: 180px;
   }
 
   .main-p {
@@ -537,6 +539,15 @@ header {
     font-weight: 500;
     line-height: 30px;
     margin: 8px 0;
+    padding-left: 180px;
+  }
+
+  .media-h2 {
+    padding-left: 180px;
+  }
+
+  .media {
+    padding-left: 180px;
   }
 
   .card {
