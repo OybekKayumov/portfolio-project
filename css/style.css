@@ -238,6 +238,22 @@ header {
   height: auto;
 }
 
+/* .menu {
+  display: none;
+  visibility: hidden;
+} */
+
+.desktop-facebook {
+  /* .canopy-mobile { */
+  display: none;
+  visibility: hidden;
+}
+
+.desktop-p-experiment {
+  visibility: hidden;
+  display: none;
+}
+
 .works-container {
   display: grid;
   grid-template-columns: auto;
@@ -579,6 +595,34 @@ header {
 
   .img-right {
     order: 2;
+  }
+
+  /* .btn-hamburg {
+    visibility: visible;
+    display: none;
+  } */
+
+  .desktop-facebook {
+    visibility: visible;
+    display: block;
+  }
+
+  /* .desktop-facebook { */
+  .canopy-mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  .desktop-p-experiment {
+    /* yes */
+    visibility: visible;
+    display: block;
+  }
+
+  .mobile-p-deskribe {
+    /* no */
+    visibility: hidden;
+    display: none;
   }
 
   .main-page-about-myself {
