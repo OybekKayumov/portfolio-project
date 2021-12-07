@@ -252,6 +252,10 @@ header {
 .desktop-p-experiment {
   visibility: hidden;
   display: none;
+
+  /* display: block; */
+
+  /* visibility: visible; */
 }
 
 .works-container {
@@ -578,7 +582,6 @@ header {
   }
 
   .card-info {
-    /* border: 2px solid slateblue; */
     display: flex;
     flex-flow: column;
     padding-left: 5%;
@@ -597,30 +600,25 @@ header {
     order: 2;
   }
 
-  /* .btn-hamburg {
-    visibility: visible;
-    display: none;
-  } */
-
   .desktop-facebook {
     visibility: visible;
-    display: block;
+    display: inline-block;
+
+    /* display: block; */
   }
 
-  /* .desktop-facebook { */
   .canopy-mobile {
     visibility: hidden;
     display: none;
   }
 
   .desktop-p-experiment {
-    /* yes */
     visibility: visible;
     display: block;
+    margin-right: 46px;
   }
 
   .mobile-p-deskribe {
-    /* no */
     visibility: hidden;
     display: none;
   }
@@ -632,12 +630,10 @@ header {
   }
 
   .mp-about-myself-profile {
-    /* border: 2px green solid; */
     padding: 0;
   }
 
   .skills {
-    /* border: 3px solid magenta; */
     display: flex;
     flex-flow: column nowrap;
     padding-top: 50px;
