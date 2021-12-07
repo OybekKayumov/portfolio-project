@@ -12,8 +12,6 @@ body {
   margin: 0 auto;
   background: #f5f5f5;
 
-  /* border: 2px solid lightgreen; */
-
   /* width: 375px; */
 }
 
@@ -238,13 +236,7 @@ header {
   height: auto;
 }
 
-/* .menu {
-  display: none;
-  visibility: hidden;
-} */
-
 .desktop-facebook {
-  /* .canopy-mobile { */
   display: none;
   visibility: hidden;
 }
@@ -252,10 +244,6 @@ header {
 .desktop-p-experiment {
   visibility: hidden;
   display: none;
-
-  /* display: block; */
-
-  /* visibility: visible; */
 }
 
 .works-container {
@@ -274,8 +262,6 @@ header {
   border-radius: 0 90px 0 0;
   padding: 0;
   margin: 0;
-
-  /* border: 5px solid goldenrod; */
 }
 
 .h1-about-myself {
@@ -317,7 +303,6 @@ header {
 }
 
 .mp-about-myself-profile {
-  /* border: 5px solid rgb(255, 153, 0); */
   display: flex;
   flex-flow: column nowrap;
   font-style: normal;
@@ -328,7 +313,6 @@ header {
 }
 
 .skills {
-  /* border: 3px solid blue; */
   display: flex;
   flex-flow: row nowrap;
 }
@@ -603,8 +587,6 @@ header {
   .desktop-facebook {
     visibility: visible;
     display: inline-block;
-
-    /* display: block; */
   }
 
   .canopy-mobile {
