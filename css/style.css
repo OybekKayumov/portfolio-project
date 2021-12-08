@@ -87,12 +87,14 @@ header {
 }
 
 .media-h2 {
-  color: #7f8cff;
+  color: #2438c4;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   padding: 0 15px;
   margin: 15px 0 15px 0;
+
+  /* color: #7f8cff; */
 }
 
 .media {
@@ -121,7 +123,9 @@ header {
 .btn-enabled-tonic1 {
   color: #396df2;
   background: #fff;
-  border: 1px solid #7f8cff;
+  border: 1px solid #2438c4;
+
+  /* border: 1px solid #7f8cff; */
 }
 
 .btn-enabled-tonic1:hover {
@@ -285,11 +289,13 @@ header {
 }
 
 .media-h2-about-myself {
-  color: #7f8cff;
+  color: #2438c4;
   font-style: normal;
   font-weight: 400;
   padding: 0 10px;
   margin: 15px 0 0 0;
+
+  /* color: #7f8cff; */
 }
 
 .media-about-myself {
