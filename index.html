@@ -436,12 +436,16 @@
             <div class="contact">
 
                 <form class="form-contact" action="https://formspree.io/f/xgedwnlv" method="POST">
-                    
-                    <input type="text" name="firstname" maxlength="30" placeholder="Yeremias" required>
 
-                    <input type="email" name="email" placeholder="natajayanj14@gmail.com" required>
+                    <label for="name">Name :</label>                    
+                    <input type="text" id="name" name="firstname" maxlength="30" placeholder="Yeremias" required>
 
-                    <textarea name="message" maxlength="500" placeholder="Write your message here" required></textarea>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="natajayanj14@gmail.com" required>
+
+                    <label for="textarea">Message :</label>
+                    <textarea id="textarea" name="message" maxlength="500" placeholder="Write your message here" required></textarea>
                 </form>
 
                 <button type="submit" class="btn btn-enabled-tonic1 btn-contact">Get It Touch
