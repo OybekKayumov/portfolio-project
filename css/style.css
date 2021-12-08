@@ -387,13 +387,17 @@ header {
   flex-flow: column nowrap;
   row-gap: 28px;
   border-radius: 80px 0 0 0;
-  background-color: #161218;
+  background-color: #6070ff;
   padding-bottom: 30px;
   margin-top: 30px;
   background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
+}
+
+label {
+  color: #fff;
 }
 
 .h2-contact-me {
