@@ -130,13 +130,17 @@ header {
 
 .btn-enabled-tonic1:hover {
   color: #fff;
-  background: #6070ff;
+  background: #1b31f0;
   box-shadow: 0 8px 16px rgba(70, 85, 255, 0.25);
+
+  /* background: #6070ff; */
 }
 
 .btn-enabled-tonic1:active {
   color: #fff;
-  background: #6070ff;
+  background: #1b31f0;
+
+  /* background: #6070ff; */
 }
 
 .btn-disable {
@@ -158,7 +162,7 @@ header {
 }
 
 .tag {
-  color: #6070ff;
+  color: #1b31f0;
   padding: 5px 12px;
   background: #ebebff;
   border-radius: 8px;
@@ -171,7 +175,7 @@ header {
 }
 
 .tag a {
-  color: #6070ff;
+  color: #2836ba;
   text-decoration: none;
 }
 
@@ -383,7 +387,7 @@ header {
   flex-flow: column nowrap;
   row-gap: 28px;
   border-radius: 80px 0 0 0;
-  background-color: #6070fe;
+  background-color: #161218;
   padding-bottom: 30px;
   margin-top: 30px;
   background-image: url("../images/bg-contact.png");
@@ -403,7 +407,7 @@ header {
 }
 
 .p-contact-info {
-  color: #ebebff;
+  color: #fcfcfc;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
