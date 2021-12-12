@@ -12,8 +12,6 @@ body {
   margin: 0 auto;
   background: #f5f5f5;
 
-  /* border: 2px solid lightgreen; */
-
   /* width: 375px; */
 }
 
@@ -89,12 +87,14 @@ header {
 }
 
 .media-h2 {
-  color: #7f8cff;
+  color: #2438c4;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   padding: 0 15px;
   margin: 15px 0 15px 0;
+
+  /* color: #7f8cff; */
 }
 
 .media {
@@ -123,18 +123,24 @@ header {
 .btn-enabled-tonic1 {
   color: #396df2;
   background: #fff;
-  border: 1px solid #7f8cff;
+  border: 1px solid #2438c4;
+
+  /* border: 1px solid #7f8cff; */
 }
 
 .btn-enabled-tonic1:hover {
   color: #fff;
-  background: #6070ff;
+  background: #1b31f0;
   box-shadow: 0 8px 16px rgba(70, 85, 255, 0.25);
+
+  /* background: #6070ff; */
 }
 
 .btn-enabled-tonic1:active {
   color: #fff;
-  background: #6070ff;
+  background: #1b31f0;
+
+  /* background: #6070ff; */
 }
 
 .btn-disable {
@@ -156,7 +162,7 @@ header {
 }
 
 .tag {
-  color: #6070ff;
+  color: #1b31f0;
   padding: 5px 12px;
   background: #ebebff;
   border-radius: 8px;
@@ -169,7 +175,7 @@ header {
 }
 
 .tag a {
-  color: #6070ff;
+  color: #2836ba;
   text-decoration: none;
 }
 
@@ -196,7 +202,7 @@ header {
 }
 
 .role {
-  color: #7a869a;
+  color: #454a53;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -238,6 +244,16 @@ header {
   height: auto;
 }
 
+.desktop-facebook {
+  display: none;
+  visibility: hidden;
+}
+
+.desktop-p-experiment {
+  visibility: hidden;
+  display: none;
+}
+
 .works-container {
   display: grid;
   grid-template-columns: auto;
@@ -254,8 +270,6 @@ header {
   border-radius: 0 90px 0 0;
   padding: 0;
   margin: 0;
-
-  /* border: 5px solid goldenrod; */
 }
 
 .h1-about-myself {
@@ -279,11 +293,13 @@ header {
 }
 
 .media-h2-about-myself {
-  color: #7f8cff;
+  color: #2438c4;
   font-style: normal;
   font-weight: 400;
   padding: 0 10px;
   margin: 15px 0 0 0;
+
+  /* color: #7f8cff; */
 }
 
 .media-about-myself {
@@ -297,7 +313,6 @@ header {
 }
 
 .mp-about-myself-profile {
-  /* border: 5px solid rgb(255, 153, 0); */
   display: flex;
   flex-flow: column nowrap;
   font-style: normal;
@@ -308,7 +323,6 @@ header {
 }
 
 .skills {
-  /* border: 3px solid blue; */
   display: flex;
   flex-flow: row nowrap;
 }
@@ -373,13 +387,20 @@ header {
   flex-flow: column nowrap;
   row-gap: 28px;
   border-radius: 80px 0 0 0;
-  background-color: #6070fe;
+  background-color: #6070ff;
   padding-bottom: 30px;
   margin-top: 30px;
   background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
+}
+
+label {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .h2-contact-me {
@@ -393,9 +414,9 @@ header {
 }
 
 .p-contact-info {
-  color: #ebebff;
+  color: #fcfcfc;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   line-height: 28px;
   text-align: center;
@@ -441,7 +462,7 @@ header {
 }
 
 .btn-contact {
-  color: #6070ff;
+  color: #1b31f0;
   text-align: left;
   background: #fff;
   border: none;
@@ -562,7 +583,6 @@ header {
   }
 
   .card-info {
-    /* border: 2px solid slateblue; */
     display: flex;
     flex-flow: column;
     padding-left: 5%;
@@ -581,6 +601,27 @@ header {
     order: 2;
   }
 
+  .desktop-facebook {
+    visibility: visible;
+    display: inline-block;
+  }
+
+  .canopy-mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  .desktop-p-experiment {
+    visibility: visible;
+    display: block;
+    margin-right: 46px;
+  }
+
+  .mobile-p-deskribe {
+    visibility: hidden;
+    display: none;
+  }
+
   .main-page-about-myself {
     grid-template-columns: 45% auto;
     grid-gap: 20px;
@@ -588,12 +629,10 @@ header {
   }
 
   .mp-about-myself-profile {
-    /* border: 2px green solid; */
     padding: 0;
   }
 
   .skills {
-    /* border: 3px solid magenta; */
     display: flex;
     flex-flow: column nowrap;
     padding-top: 50px;
