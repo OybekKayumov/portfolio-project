@@ -53,6 +53,7 @@ header {
 }
 
 .cover {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -330,8 +331,6 @@ header {
   font-weight: 400;
   padding: 0 10px;
   margin: 15px 0 0 0;
-
-  /* color: #7f8cff; */
 }
 
 .media-about-myself {
