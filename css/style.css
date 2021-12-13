@@ -1,6 +1,5 @@
-
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -11,8 +10,6 @@ body {
   padding: 0;
   margin: 0 auto;
   background: #f5f5f5;
-
-  /* width: 375px; */
 }
 
 button {
@@ -32,18 +29,6 @@ header {
 .menu {
   display: none;
   visibility: hidden;
-}
-
-.btn-hamburg {
-  /* display: none; */
-
-  /* visibility: visible; */
-}
-
-/* mobile menu */
-
-.hidden {
-  display: none;
 }
 
 .menu-list {
@@ -723,7 +708,7 @@ label {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-image: url("/images/bg-cont-frm-shapes.png");
+    background-image: url("./images/bg-cont-frm-shapes.png");
   }
 
   .contact-form input {
