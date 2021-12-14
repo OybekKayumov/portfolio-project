@@ -1,5 +1,6 @@
 * {
-  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -94,7 +95,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/header-shapes-mobile.png");
+  background-image: url('../images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
@@ -318,14 +319,13 @@ header {
 /* popup */
 
 .popup-cover {
-  box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   display: none;
   z-index: 200;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: 100vh;
   backdrop-filter: blur(6px);
   background-color: rgb(193, 199, 208, 0.4);
 }
@@ -340,9 +340,20 @@ header {
   background-color: #fff;
   margin: 16px;
   border-radius: 10px;
-  padding: 18px 16px;
+  padding: 15% 16px;
 }
 
+.modal .close-modal {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.modal .close-modal .bi-x {
+  font-size: 28px;
+  color: #67798e;
+  font-weight: 700;
+}
 .modal .modal-header {
   display: flex;
   justify-content: space-between;
@@ -469,7 +480,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/base-about-my-self.png");
+  background-image: url('../images/base-about-my-self.png');
   border-radius: 0 90px 0 0;
 }
 
@@ -543,7 +554,7 @@ header {
   background-color: #6070ff;
   padding-bottom: 30px;
   margin-top: 30px;
-  background-image: url("../images/bg-contact.png");
+  background-image: url('../images/bg-contact.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -690,7 +701,7 @@ label {
     font-size: 20px;
     font-style: normal;
     background-color: #fff;
-    background-image: url("../images/bg-header.png");
+    background-image: url('../images/bg-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 5%;
@@ -821,7 +832,7 @@ label {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-image: url("./images/bg-cont-frm-shapes.png");
+    background-image: url('./images/bg-cont-frm-shapes.png');
   }
 
   .contact {
