@@ -283,6 +283,27 @@ header {
   justify-content: center;
 }
 
+/* popup */
+
+.popup-cover {
+  position: absolute;
+  display: block;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgb(193, 199, 208, 0.4);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 16px;
+}
+
 .main-page-about-myself {
   display: grid;
   grid-template-columns: auto;
