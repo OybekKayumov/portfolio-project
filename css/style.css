@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -94,7 +94,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/header-shapes-mobile.png");
+  background-image: url('../images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
@@ -140,7 +140,7 @@ header {
   margin: 0;
 }
 
-.btn {
+/* .btn {
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
@@ -151,6 +151,38 @@ header {
   letter-spacing: 0.04em;
   padding: 12px;
   margin: 12px 0;
+} */
+
+.btn {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 24%);
+  border: 1px solid #4053fc;
+  background-color: #6070ff;
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.btn:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+  background-color: #fff;
+  cursor: not-allowed;
 }
 
 .btn-enabled-tonic1 {
@@ -286,13 +318,14 @@ header {
 /* popup */
 
 .popup-cover {
+  box-sizing: border-box;
   position: absolute;
   display: block;
   z-index: 200;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   backdrop-filter: blur(6px);
   background-color: rgb(193, 199, 208, 0.4);
 }
@@ -300,8 +333,86 @@ header {
 .modal {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  position: relative;
   background-color: #fff;
   margin: 16px;
+  border-radius: 10px;
+  padding: 18px 16px;
+}
+
+.modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+}
+
+.modal .project-title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #172b4d;
+  text-transform: uppercase;
+}
+
+.modal .modal-header .project-client {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 16px;
+  color: #344563;
+}
+
+.modal .modal-header .role-year-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 70%;
+}
+
+.modal .modal-header .role-year-ul .project-role,
+.project-year {
+  color: #7a869a;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.modal .modal-header .role-year-ul .project-year {
+  margin-left: 32px;
+}
+
+.modal img {
+  max-width: 100%;
+  align-self: stretch;
+}
+
+.modal .modal-description {
+  font-size: 15px;
+  padding: 12px 0;
+  font-weight: 400;
+  color: #344563;
+  line-height: 24px;
+}
+
+.modal .modal-see-btn {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .main-page-about-myself {
@@ -358,7 +469,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/base-about-my-self.png");
+  background-image: url('../images/base-about-my-self.png');
   border-radius: 0 90px 0 0;
 }
 
@@ -432,7 +543,7 @@ header {
   background-color: #6070ff;
   padding-bottom: 30px;
   margin-top: 30px;
-  background-image: url("../images/bg-contact.png");
+  background-image: url('../images/bg-contact.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -579,7 +690,7 @@ label {
     font-size: 20px;
     font-style: normal;
     background-color: #fff;
-    background-image: url("../images/bg-header.png");
+    background-image: url('../images/bg-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 5%;
@@ -710,7 +821,7 @@ label {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-image: url("./images/bg-cont-frm-shapes.png");
+    background-image: url('./images/bg-cont-frm-shapes.png');
   }
 
   .contact {
