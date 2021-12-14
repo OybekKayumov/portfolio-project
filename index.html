@@ -1,464 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S97EP0E783"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S97EP0E783"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-S97EP0E783');
+      gtag("config", "G-S97EP0E783");
     </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Oybek Kayumov's Portfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <a class="logo" href="#">My Logo</a>
-        </div>
-        <nav>
+      <div>
+        <a class="logo" href="#">My Logo</a>
+      </div>
+      <!-- original -->
+      <nav>
+        <button id="menu-open-icon" class="btn-hamburg">
+          <img
+            src="./images/menu.png"
+            alt="logo"
+            class="btn-hamburg open-menu"
+          />
+        </button>
+        <ul class="menu">
+          <li><a href="#work" class="menu-item">Portfolio</a></li>
+          <li><a href="#about" class="menu-item">About</a></li>
+          <li><a href="#contact" class="menu-item">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- end original -->
+      <!-- menu -->
+      <div id="mobile-menu" class="cover hidden">
+        <button id="menu-close-icon" class="btn-hamburg close-cover close-menu">
+          <img src="./images/close-mob-over.svg" alt="menu icon" />
+        </button>
 
-            <button class="btn-hamburg">
-                <img src="./images/menu.png" alt="menu icon">
-            </button>
-            <ul class="menu">
-                <li><a href="#" class="menu-item">Portfolio</a></li>
-                <li><a href="#" class="menu-item">About</a></li>
-                <li><a href="#" class="menu-item">Contact</a></li>
-            </ul>
-        </nav>
+        <ul class="menu-list">
+          <li><a href="#work" class="option">Portfolio</a></li>
+          <li><a href="#about" class="option">About</a></li>
+          <li><a href="#contact" class="option">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- menu end -->
     </header>
 
     <section class="main-page">
-        <div class="main-page-h1">
-            <h1>I'm Oybek Glad to see you!</h1>
+      <div class="main-page-h1">
+        <h1>I'm Oybek Glad to see you!</h1>
+      </div>
+      <div>
+        <p class="main-p">
+          I'm a software developer! I can help you build a product, feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don't hesitate to contact
+          me.
+        </p>
+      </div>
+      <div>
+        <h2 class="media-h2">LET'S CONNECT</h2>
+      </div>
+      <ul class="media">
+        <li>
+          <a
+            href="https://twitter.com/KayumovOybek"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="twlogo" src="./images/twitter.svg" alt="twitter-icon" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/oybek-kayumov-54a8485b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/linkedin.svg" alt="linkedin icon" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://medium.com/@oybek.kayumov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/medium.svg" alt="medium icon" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/OybekKayumov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/github.svg" alt="github icon" />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://angel.co/u/oybek-kayumov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/vector.svg" alt="angellist icon" />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="works" id="work">
+      <div class="works-container">
+        <div class="item">
+          <div class="card">
+            <div class="card-body">
+              
+              <div>
+                <img
+                  src="./images/works1.png"
+                  class="image1"
+                  alt="Tonic website screenshot"
+                />
+                <img
+                  src="./images/desk-works1.png"
+                  class="image2"
+                  alt="Nature website screenshot"
+                />
+              </div>
+
+              <div class="card-info">
+                <h3 class="card-title">Tonic</h3>
+
+                <div class="canopy-part">
+                  <div class="canopy">
+                    <h3 class="desktop-facebook">Canopy</h3>
+
+                    <h3 class="canopy-mobile">CANOPY</h3>
+                  </div>
+                  <div>
+                    <ul class="roles-ul">
+                      <li class="role">Back End Dev</li>
+                      <li class="role">2015</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="desktop-p-experiment">
+                    Experimental content creation feature that allows users to
+                    add to an existing story over the course of a day without
+                    spamming their friends.
+                  </p>
+
+                  <p class="p-deskribe mobile-p-deskribe">
+                    A Daily selection of privately personalized reads; no
+                    accounts or sign-ups required.
+                  </p>
+                </div>
+
+                <div>
+                  <ul class="tags-ul">
+                    <li class="tag"><a href="#">html</a></li>
+                    <li class="tag"><a href="#">css</a></li>
+                    <li class="tag"><a href="#">javaScript</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="btn btn-enabled-tonic1">See Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-            <p class="main-p">
-                I’m a software developer! I can help you build a product, feature or website Look through some of my
-                work and
-                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+
+        <div class="item">
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="img-right">
+                <img
+                  src="./images/works2.png"
+                  class="image1"
+                  alt="availability website screenshot"
+                />
+                <img
+                  src="./images/desk-works2.png"
+                  class="image2"
+                  alt="availability website screenshot"
+                />
+              </div>
+
+              <div class="card-info">
+                <h3 class="card-title">
+                  Multi-Post <br />
+                  Stories
+                </h3>
+
+                <div class="canopy-part">
+                  <div class="canopy">
+                    <h3 class="desktop-facebook">FACEBOOK</h3>
+
+                    <h3 class="canopy-mobile">CANOPY</h3>
+                  </div>
+                  <div>
+                    <ul class="roles-ul">
+                      <li class="role">Back End Dev</li>
+                      <li class="role">2015</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="desktop-p-experiment">
+                    Experimental content creation feature that allows users to
+                    add to an existing story over the course of a day without
+                    spamming their friends.
+                  </p>
+
+                  <p class="p-deskribe mobile-p-deskribe">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required.
+                  </p>
+                </div>
+
+                <div>
+                  <ul class="tags-ul">
+                    <li class="tag"><a href="#">html</a></li>
+                    <li class="tag"><a href="#">css</a></li>
+                    <li class="tag"><a href="#">javaScript</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="btn btn-enabled-tonic1">See Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <div class="card-body">
+              
+              <div>
+                <img
+                  src="./images/works3.png"
+                  class="image1 img-right"
+                  alt="gymfit website screenshot"
+                />
+                <img
+                  src="./images/desk-works3.png"
+                  class="image2"
+                  alt="Tonic website screenshot"
+                />
+              </div>
+
+              <div class="card-info">
+                <h3 class="card-title">Tonic</h3>
+
+                <div class="canopy-part">
+                  <div class="canopy">
+                    <h3 class="desktop-facebook">FACEBOOK</h3>
+
+                    <h3 class="canopy-mobile">CANOPY</h3>
+                  </div>
+                  <div>
+                    <ul class="roles-ul">
+                      <li class="role">Back End Dev</li>
+                      <li class="role">2015</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="desktop-p-experiment">
+                    Exploring the future of media in Facebook's first Virtual
+                    Reality app; a place to discover and enjoy 360 photos and
+                    videos on Gear VR.
+                  </p>
+
+                  <p class="p-deskribe mobile-p-deskribe">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required.
+                  </p>
+                </div>
+
+                <div>
+                  <ul class="tags-ul">
+                    <li class="tag"><a href="#">html</a></li>
+                    <li class="tag"><a href="#">css</a></li>
+                    <li class="tag"><a href="#">javaScript</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="btn btn-enabled-tonic1">See Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="img-right">
+                <img
+                  src="./images/works4.png"
+                  class="image1"
+                  alt="professional art printing website screenshot"
+                />
+                <img
+                  src="./images/desk-works4.png"
+                  class="image2"
+                  alt="professional art printing website screenshot"
+                />
+              </div>
+
+              <div class="card-info">
+                <h3 class="card-title">
+                  Multi-Post <br />
+                  Stories
+                </h3>
+
+                <div class="canopy-part">
+                  <div class="canopy">
+                    <h3>CANOPY</h3>
+                  </div>
+                  <div>
+                    <ul class="roles-ul">
+                      <li class="role">Back End Dev</li>
+                      <li class="role">2015</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="desktop-p-experiment">
+                    A smart assistant to make driving more safe, efficient, and
+                    fun by unlocking your most expensive computer: your car.
+                  </p>
+
+                  <p class="p-deskribe mobile-p-deskribe">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required.
+                  </p>
+                </div>
+
+                <div>
+                  <ul class="tags-ul">
+                    <li class="tag"><a href="#">html</a></li>
+                    <li class="tag"><a href="#">css</a></li>
+                    <li class="tag"><a href="#">javaScript</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="btn btn-enabled-tonic1">See Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-myself1" id="about">
+      <div class="main-page-about-myself">
+        <div class="mp-about-myself-profile">
+          <div class="h1-about-myself">
+            <h1>
+              About <br />
+              myself
+            </h1>
+          </div>
+          <div>
+            <p class="p-about-myself">
+              I'm a software developer! I can help you build a product, feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don't
+              hestiate to contact me.
             </p>
-        </div>
-        <div>
-            <h2 class="media-h2">LET'S CONNECT</h2>
-        </div>
-        <ul class="media">
-            <li>                
-                <a href="https://twitter.com/KayumovOybek" target="_blank" rel="noopener noreferrer">
-                    <img class="twlogo" src="./images/twitter.svg" alt="twitter-icon" />
-                </a>
+          </div>
+
+          <div>
+            <h2 class="media-h2-about-myself">LET'S CONNECT</h2>
+          </div>
+
+          <ul class="media-about-myself">
+            <li>
+              <a
+                href="https://twitter.com/KayumovOybek"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <img src="./images/twitter.svg" alt="twitter icon"
+              /></a>
             </li>
 
             <li>
-                <a href="https://www.linkedin.com/in/oybek-kayumov-54a8485b" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/linkedin.svg" alt="linkedin icon" />
-                </a>
+              <a
+                href="https://www.linkedin.com/in/oybek-kayumov-54a8485b"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><img src="./images/linkedin.svg" alt="linkedin icon"
+              /></a>
             </li>
 
             <li>
-                <a href="https://medium.com/@oybek.kayumov" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/medium.svg" alt="medium icon" />
-                </a>
+              <a
+                href="https://medium.com/@oybek.kayumov"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><img src="./images/medium.svg" alt="medium icon"
+              /></a>
             </li>
 
             <li>
-                <a href="https://github.com/OybekKayumov" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/github.svg" alt="github icon" />
-                </a>
+              <a
+                href="https://github.com/OybekKayumov"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./images/github.svg" alt="github icon"
+              /></a>
+            </li>
 
             <li>
-                <a href="https://angel.co/u/oybek-kayumov" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/vector.svg" alt="angellist icon" />
-                </a>
+              <a
+                href="https://angel.co/u/oybek-kayumov"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./images/vector.svg" alt="angellist icon"
+              /></a>
             </li>
-        </ul>
-    </section>
+          </ul>
 
-    <section class="works">
-
-        <div class="works-container">
-
-            <div class="item">
-                <div class="card">
-                    <div class="card-body">
-
-                        <!-- original -->
-
-                        <!-- <div class="card-image-tonic1"> 
-                            <img class="card-image-tonic1 img-right" src="./images/works1.png" alt="works1">
-                        </div> --> 
-
-                        <!-- it works, images change in Mobile and Desktop versions -->
-
-                        <div>
-                            <img src="./images/works1.png" class="image1" alt="Tonic website screenshot"/>
-                            <img src="./images/desk-works1.png" class="image2" alt="Nature website screenshot"/>
-                        </div>
-
-                        <div class="card-info">
-
-                            <h3 class="card-title">Tonic</h3>
-
-                            <div class="canopy-part">
-
-                                <div class="canopy">
-
-                                    <h3 class="desktop-facebook">Canopy</h3>
-
-                                    <h3 class="canopy-mobile">CANOPY</h3>
-
-                                </div>
-                                <div>
-                                    <ul class="roles-ul">
-                                        <li class="role">Back End Dev</li>
-                                        <li class="role">2015</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="desktop-p-experiment">
-                                    Experimental content creation feature that allows users to add
-                                    to an existing story over the course of a day without spamming
-                                    their friends.
-                                </p>
-
-                                <p class="p-deskribe mobile-p-deskribe">
-                                    A Daily selection of privately personalized reads; no accounts or sign-ups required.
-                                </p>
-                            </div>
-
-                            <div>
-                                <ul class="tags-ul">
-                                    <li class="tag"><a href="#">html</a></li>
-                                    <li class="tag"><a href="#">css</a></li>
-                                    <li class="tag"><a href="#">javaScript</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <button class="btn btn-enabled-tonic1">See Project</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="card">
-                    <div class="card-body">
-
-                        <!-- <div class="card-image-tonic1 img-right">
-                            <img class="card-image-tonic1" src="./images/works2.png" alt="works1">
-                        </div> -->
-
-                        <div class="img-right">
-                            <img src="./images/works2.png" class="image1" alt="availability website screenshot" />
-                            <img src="./images/desk-works2.png" class="image2" alt="availability website screenshot" />
-                        </div>
-
-                        <div class="card-info">
-
-                            <h3 class="card-title">Multi-Post <br> Stories</h3>
-
-                            <div class="canopy-part">
-
-                                <div class="canopy">
-
-                                    <h3 class="desktop-facebook">FACEBOOK</h3>
-
-                                    <h3 class="canopy-mobile">CANOPY</h3>
-                                </div>
-                                <div>
-                                    <ul class="roles-ul">
-                                        <li class="role">Back End Dev</li>
-                                        <li class="role">2015</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="desktop-p-experiment">
-                                    Experimental content creation feature that allows users to add
-                                    to an existing story over the course of a day without spamming
-                                    their friends.
-                                </p>
-
-                                <p class="p-deskribe mobile-p-deskribe">
-                                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                                </p>
-                            </div>
-
-                            <div>
-                                <ul class="tags-ul">
-                                    <li class="tag"><a href="#">html</a></li>
-                                    <li class="tag"><a href="#">css</a></li>
-                                    <li class="tag"><a href="#">javaScript</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <button class="btn btn-enabled-tonic1">See Project</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="card">
-                    <div class="card-body">
-
-                        <!-- <div class="card-image-tonic1">
-                            <img class="card-image-tonic1 img-right" src="./images/works3.png" alt="works1">
-                        </div> -->
-
-                        <div>
-                            <img src="./images/works3.png" class="image1 img-right" alt="gymfit website screenshot"/>
-                            <img src="./images/desk-works3.png" class="image2" alt="Tonic website screenshot"/>
-                        </div>
-
-                        <div class="card-info">
-
-                            <h3 class="card-title">Tonic</h3>
-
-                            <div class="canopy-part">
-
-                                <div class="canopy">
-                                    <h3 class="desktop-facebook">FACEBOOK</h3>
-
-                                    <h3 class="canopy-mobile">CANOPY</h3>
-                                </div>
-                                <div>
-                                    <ul class="roles-ul">
-                                        <li class="role">Back End Dev</li>
-                                        <li class="role">2015</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="desktop-p-experiment">
-                                    Exploring the future of media in Facebook's first Virtual Reality app; a place to
-                                    discover and enjoy 360 photos and
-                                    videos on Gear VR.
-                                </p>
-
-                                <p class="p-deskribe mobile-p-deskribe">
-                                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                                </p>
-                            </div>
-
-                            <div>
-                                <ul class="tags-ul">
-                                    <li class="tag"><a href="#">html</a></li>
-                                    <li class="tag"><a href="#">css</a></li>
-                                    <li class="tag"><a href="#">javaScript</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <button class="btn btn-enabled-tonic1">See Project</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="card">
-                    <div class="card-body">
-
-                        <!-- <div class="card-image-tonic1 img-right">
-                            <img class="card-image-tonic1" src="./images/works4.png" alt="works1">
-                        </div> -->
-
-                        <div class="img-right">
-                            <img src="./images/works4.png" class="image1" alt="professional art printing website screenshot" />
-                            <img src="./images/desk-works4.png" class="image2" alt="professional art printing website screenshot" />
-                        </div>
-
-                        <div class="card-info">
-
-                            <h3 class="card-title">Multi-Post <br> Stories</h3>
-
-                            <div class="canopy-part">
-
-                                <div class="canopy">
-                                    <h3>CANOPY</h3>
-                                </div>
-                                <div>
-                                    <ul class="roles-ul">
-                                        <li class="role">Back End Dev</li>
-                                        <li class="role">2015</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="desktop-p-experiment ">
-                                    A smart assistant to make driving more safe, efficient, and fun by unlocking your
-                                    most expensive computer: your car.
-                                </p>
-
-                                <p class="p-deskribe mobile-p-deskribe">
-                                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                                </p>
-                            </div>
-
-                            <div>
-                                <ul class="tags-ul">
-                                    <li class="tag"><a href="#">html</a></li>
-                                    <li class="tag"><a href="#">css</a></li>
-                                    <li class="tag"><a href="#">javaScript</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <button class="btn btn-enabled-tonic1">See Project</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
+          <div>
+            <button class="btn btn-enabled-tonic1">Get my resume</button>
+          </div>
         </div>
 
-    </section>
+        <div class="skills">
+          <ul class="skills-list">
+            <li class="skill dropdown">
+              Languages<img
+                class="icon"
+                src="./images/angle-down.svg"
+                alt="angle down"
+              />
 
-    <section class="about-myself1">
-        <div class="main-page-about-myself">
+              <ul class="languages">
+                <li class="language">
+                  <img
+                    class="lang-logo"
+                    src="./images/js.png"
+                    alt="JavaScript icon"
+                  /><a href="#" class="lang">JavaScript</a>
+                </li>
 
-            <div class="mp-about-myself-profile">
+                <li class="language">
+                  <img
+                    class="lang-logo"
+                    src="./images/html.png"
+                    alt="HTML5 icon"
+                  />
+                  <a href="#" class="lang">HTML</a>
+                </li>
 
-                <div class="h1-about-myself">
-                    <h1>About <br> myself</h1>
-                </div>
-                <div>
-                    <p class="p-about-myself">
-                        I’m a software developer! I can help you build a product, feature or website Look through some
-                        of my work
-                        and
-                        experience! If you like what you see and have a project you need coded, don’t hestiate to
-                        contact me.
-                    </p>
-                </div>
-
-                <div>
-                    <h2 class="media-h2-about-myself">LET'S CONNECT</h2>
-                </div>
-
-                <ul class="media-about-myself">
-
-                    <li>
-                        <a href="https://twitter.com/KayumovOybek" target="_blank" rel="noopener noreferrer nofollow"> <img src="./images/twitter.svg" alt="twitter icon" /></a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/oybek-kayumov-54a8485b" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/linkedin.svg" alt="linkedin icon" /></a>
-                    </li>
-
-                    <li>
-                        <a href="https://medium.com/@oybek.kayumov" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/medium.svg" alt="medium icon" /></a>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/OybekKayumov" target="_blank" rel="noopener noreferrer"><img src="./images/github.svg" alt="github icon" /></a>
-                    <li>
-                        <a href="https://angel.co/u/oybek-kayumov" target="_blank" rel="noopener noreferrer"><img src="./images/vector.svg" alt="angellist icon" /></a>
-                    </li>
-                </ul>
-
-                <div>
-                    <button class="btn btn-enabled-tonic1"> Get my resume</button>
-                </div>
-
-            </div>
-
-            <div class="skills">
-                <ul class="skills-list">
-
-                    <li class="skill dropdown">Languages<img class="icon" src="./images/angle-down.svg"
-                            alt="angle down">
-
-                        <ul class="languages">
-
-                            <li class="language"><img class="lang-logo" src="./images/js.png" alt="JavaScript icon"><a
-                                    href="#" class="lang">JavaScript</a>
-                            </li>
-
-                            <li class="language"> <img class="lang-logo" src="./images/html.png" alt="HTML5 icon"> <a
-                                    href="#" class="lang">HTML</a>
-                            </li>
-
-                            <li class="language"> <img class="lang-logo" src="./images/css.png" alt="CSS icon"><a href="#"
-                                    class="lang">CSS</a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-                    <li class="skill">Frameworks <img class="icon" src="./images/angle-right.svg" alt="right"></li>
-                    <li class="skill">Skills <img class="icon" src="./images/angle-right.svg" alt="right"></li>
-                </ul>
-            </div>
-
+                <li class="language">
+                  <img
+                    class="lang-logo"
+                    src="./images/css.png"
+                    alt="CSS icon"
+                  /><a href="#" class="lang">CSS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="skill">
+              Frameworks
+              <img class="icon" src="./images/angle-right.svg" alt="right" />
+            </li>
+            <li class="skill">
+              Skills
+              <img class="icon" src="./images/angle-right.svg" alt="right" />
+            </li>
+          </ul>
         </div>
-
+      </div>
     </section>
 
     <footer>
+      <section class="container-footer" id="contact">
+        <div>
+          <h2 class="h2-contact-me">Contact me</h2>
 
-        <section class="container-footer">
-            <div>
-                <h2 class="h2-contact-me">Contact me</h2>
+          <p class="p-contact-info">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I'd love
+            to help with it
+          </p>
+        </div>
 
-                <p class="p-contact-info">
-                    If you have an application you are interested in developing, a feature that you need built or a
-                    project that needs coding. I’d love to help with it
-                </p>
-            </div>
+        <div class="contact">
+          <form
+            class="form-contact"
+            action="https://formspree.io/f/xgedwnlv"
+            method="POST"
+          >
+            <label for="name">Name :</label>
+            <input
+              type="text"
+              id="name"
+              name="firstname"
+              maxlength="30"
+              placeholder="Yeremias"
+              required
+            />
 
-            <div class="contact">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="natajayanj14@gmail.com"
+              required
+            />
 
-                <form class="form-contact" action="https://formspree.io/f/xgedwnlv" method="POST">
+            <label for="textarea">Message :</label>
+            <textarea
+              id="textarea"
+              name="message"
+              maxlength="500"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </form>
 
-                    <label for="name">Name :</label>                    
-                    <input type="text" id="name" name="firstname" maxlength="30" placeholder="Yeremias" required>
+          <button type="submit" class="btn btn-enabled-tonic1 btn-contact">
+            Get It Touch
+          </button>
+        </div>
 
+        <a href="#" class="">
+          <i
+            class="
+              bi bi-arrow-up-circle
+              h1
+              position-absolute
+              bottom-0
+              end-0
+              position-fixed
+              text-info
+            "
+          >
+          </i>
+        </a>
 
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="natajayanj14@gmail.com" required>
-
-                    <label for="textarea">Message :</label>
-                    <textarea id="textarea" name="message" maxlength="500" placeholder="Write your message here" required></textarea>
-                </form>
-
-                <button type="submit" class="btn btn-enabled-tonic1 btn-contact">Get It Touch
-                </button>
-
-            </div>
-
-            <div class="shape1" id="line"></div>
-
-        </section>
-
+        <div class="shape1" id="line"></div>
+      </section>
     </footer>
 
-</body>
-
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>

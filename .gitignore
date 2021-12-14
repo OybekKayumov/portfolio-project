@@ -1,3 +1,5 @@
+.github-html-css
+
 # Ignore test.md file
 test.md
 
@@ -19,5 +21,5 @@ node_modules
 # Ignore idea
 .idea
 
-indexWithDesktopData.html
-styleWithDesktopData.css
+indexMobileMenu.html
+styleMobileMenu.css
