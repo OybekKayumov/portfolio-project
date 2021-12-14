@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -94,7 +94,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url('../images/header-shapes-mobile.png');
+  background-image: url("../images/header-shapes-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
@@ -320,7 +320,7 @@ header {
 .popup-cover {
   box-sizing: border-box;
   position: absolute;
-  display: block;
+  display: none;
   z-index: 200;
   top: 0;
   left: 0;
@@ -469,7 +469,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url('../images/base-about-my-self.png');
+  background-image: url("../images/base-about-my-self.png");
   border-radius: 0 90px 0 0;
 }
 
@@ -543,7 +543,7 @@ header {
   background-color: #6070ff;
   padding-bottom: 30px;
   margin-top: 30px;
-  background-image: url('../images/bg-contact.png');
+  background-image: url("../images/bg-contact.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -690,7 +690,7 @@ label {
     font-size: 20px;
     font-style: normal;
     background-color: #fff;
-    background-image: url('../images/bg-header.png');
+    background-image: url("../images/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 5%;
@@ -821,7 +821,7 @@ label {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-image: url('./images/bg-cont-frm-shapes.png');
+    background-image: url("./images/bg-cont-frm-shapes.png");
   }
 
   .contact {

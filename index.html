@@ -12,9 +12,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-S97EP0E783');
+      gtag("config", "G-S97EP0E783");
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -198,7 +198,9 @@
                   </ul>
                 </div>
                 <div>
-                  <button class="btn btn-enabled-tonic1">See Project</button>
+                  <button class="btn btn-enabled-tonic1" id="project1">
+                    See Project
+                  </button>
                 </div>
               </div>
             </div>
@@ -262,7 +264,9 @@
                   </ul>
                 </div>
                 <div>
-                  <button class="btn btn-enabled-tonic1">See Project</button>
+                  <button class="btn btn-enabled-tonic1" id="project2">
+                    See Project
+                  </button>
                 </div>
               </div>
             </div>
@@ -323,7 +327,9 @@
                   </ul>
                 </div>
                 <div>
-                  <button class="btn btn-enabled-tonic1">See Project</button>
+                  <button class="btn btn-enabled-tonic1" id="project3">
+                    See Project
+                  </button>
                 </div>
               </div>
             </div>
@@ -384,7 +390,9 @@
                   </ul>
                 </div>
                 <div>
-                  <button class="btn btn-enabled-tonic1">See Project</button>
+                  <button class="btn btn-enabled-tonic1" id="project4">
+                    See Project
+                  </button>
                 </div>
               </div>
             </div>
@@ -394,21 +402,22 @@
         <!-- popup -->
         <div class="popup-cover">
           <div class="modal">
-            <h3 class="project-title">Tonic</h3>
+            <h3 class="project-title" id="project-title">Tonic</h3>
 
             <div class="modal-header">
-              <h3 class="project-client">CANOPY</h3>
+              <h3 class="project-client" id="project-client">CANOPY</h3>
               <ul class="role-year-ul">
-                <li class="project-role">Back End Dev</li>
-                <li class="project-year">2015</li>
+                <li class="project-role" id="project-role">Back End Dev</li>
+                <li class="project-year" id="project-year">2015</li>
               </ul>
             </div>
             <img
+              id="project-snapshot"
               src="./images/works1.png"
               alt="professional art printing website screenshot"
             />
             <div>
-              <p class="modal-description">
+              <p class="modal-description" id="project-description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -418,19 +427,19 @@
               </p>
             </div>
             <div>
-              <ul class="tags-ul">
+              <ul class="tags-ul" id="project-technologies">
                 <li class="tag"><a href="#">html</a></li>
                 <li class="tag"><a href="#">css</a></li>
                 <li class="tag"><a href="#">javaScript</a></li>
               </ul>
             </div>
             <div class="modal-see-btn">
-              <button class="btn">
+              <button class="btn" id="project-live">
                 See live
                 <img src="./images/popup-work/Live-icon.svg" alt="live icon" />
               </button>
 
-              <button class="btn">
+              <button class="btn" id="project-source">
                 See Source
                 <img
                   src="./images/popup-work/Github-icon.svg"
