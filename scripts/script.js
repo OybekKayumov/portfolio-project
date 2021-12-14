@@ -16,3 +16,12 @@ menuCloseButton.addEventListener('click', () => {
   mobileMenuList.style.display = 'none';
   documentBody.style.overflow = '';
 });
+
+const menuItems = document.querySelectorAll('.option');
+
+for (const menuItem of menuItems) {
+  menuItem.addEventListener('click', () => {
+    mobileMenuList.style.display = 'none';
+    documentBody.style.overflow = '';
+  });
+}

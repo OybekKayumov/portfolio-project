@@ -31,6 +31,12 @@ header {
   visibility: hidden;
 }
 
+/* mobile menu */
+
+/* .hidden {
+  display: none;
+} */
+
 .menu-list {
   position: fixed;
   width: 35rem;
@@ -126,8 +132,6 @@ header {
   font-weight: 400;
   padding: 0 15px;
   margin: 15px 0 15px 0;
-
-  /* color: #7f8cff; */
 }
 
 .media {
@@ -157,23 +161,17 @@ header {
   color: #396df2;
   background: #fff;
   border: 1px solid #2438c4;
-
-  /* border: 1px solid #7f8cff; */
 }
 
 .btn-enabled-tonic1:hover {
   color: #fff;
   background: #1b31f0;
   box-shadow: 0 8px 16px rgba(70, 85, 255, 0.25);
-
-  /* background: #6070ff; */
 }
 
 .btn-enabled-tonic1:active {
   color: #fff;
   background: #1b31f0;
-
-  /* background: #6070ff; */
 }
 
 .btn-disable {
@@ -362,6 +360,7 @@ header {
   padding: 4px 12px;
   list-style: none;
   margin: 5px 0;
+  width: 90%;
 }
 
 .skill {
@@ -386,6 +385,7 @@ header {
   width: 12px;
   padding-top: 8px;
   height: 12px;
+  box-sizing: content-box;
 }
 
 .language {
@@ -470,7 +470,7 @@ label {
   color: #172b4d;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 340px;
+  width: 370px;
   height: 60px;
   font-size: 18px;
   font-weight: 500;
@@ -486,7 +486,7 @@ label {
   color: #b3bac5;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 340px;
+  width: 370px;
   height: 165px;
   padding: 8px;
   box-sizing: border-box;
@@ -542,6 +542,7 @@ label {
     flex-flow: row;
     list-style: none;
     padding-right: 140px;
+    gap: 70px;
   }
 
   .menu-item {
@@ -564,6 +565,7 @@ label {
     margin-top: 0;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
 
   .main-page {
@@ -711,13 +713,13 @@ label {
   }
 
   .contact-form input {
-    width: 450px;
+    width: 470px;
     height: 50px;
     border-radius: 2px;
   }
 
   .contact-form textarea {
-    width: 448px;
+    width: 470px;
     height: 170px;
     border-radius: 2px;
   }
