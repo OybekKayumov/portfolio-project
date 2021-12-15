@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -16,6 +16,10 @@ body {
 button {
   background: none;
   border: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 header {
@@ -95,7 +99,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/header-shapes-mobile.png");
+  background-image: url('../images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
@@ -210,7 +214,7 @@ header {
 
 .tags-ul {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 10px;
   padding: 0;
 }
@@ -290,11 +294,10 @@ header {
 .card {
   background: #fff;
   border: 1px solid #dfe1e6;
-  box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
-  margin: 44px 0;
-  width: 327px;
+  margin: 44px 12px;
+  width: calc(100% - 24px);
   height: auto;
 }
 
@@ -324,8 +327,8 @@ header {
   z-index: 200;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   backdrop-filter: blur(6px);
   background-color: rgb(193, 199, 208, 0.4);
 }
@@ -335,22 +338,22 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: auto;
   position: relative;
+  width: auto;
   background-color: #fff;
   margin: 16px;
   border-radius: 10px;
-  padding: 15% 16px;
+  padding: 10% 16px;
 }
 
 .modal .close-modal {
   position: absolute;
-  top: 5%;
-  right: 10%;
+  top: 6px;
+  right: 2%;
 }
 
 .modal .close-modal .bi-x {
-  font-size: 28px;
+  font-size: 34px;
   color: #67798e;
   font-weight: 700;
 }
@@ -371,7 +374,7 @@ header {
   font-weight: bold;
   line-height: 44px;
   color: #172b4d;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .modal .modal-header .project-client {
@@ -381,6 +384,7 @@ header {
   font-weight: 600;
   line-height: 16px;
   color: #344563;
+  text-transform: uppercase;
 }
 
 .modal .modal-header .role-year-ul {
@@ -405,9 +409,19 @@ header {
   margin-left: 32px;
 }
 
-.modal img {
-  max-width: 100%;
+.modal .featured-image-container {
   align-self: stretch;
+  max-height: 50%;
+}
+
+.modal .featured-image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.modal .project-description-div {
+  max-height: 80px;
+  overflow: hidden;
 }
 
 .modal .modal-description {
@@ -416,6 +430,10 @@ header {
   font-weight: 400;
   color: #344563;
   line-height: 24px;
+}
+
+.modal .technologies-buttons {
+  padding-top: 16px;
 }
 
 .modal .modal-see-btn {
@@ -481,7 +499,7 @@ header {
   font-style: normal;
   padding: 15% 1.2rem;
   margin: 0;
-  background-image: url("../images/base-about-my-self.png");
+  background-image: url('../images/base-about-my-self.png');
   border-radius: 0 90px 0 0;
 }
 
@@ -555,7 +573,7 @@ header {
   background-color: #6070ff;
   padding-bottom: 30px;
   margin-top: 30px;
-  background-image: url("../images/bg-contact.png");
+  background-image: url('../images/bg-contact.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -702,7 +720,7 @@ label {
     font-size: 20px;
     font-style: normal;
     background-color: #fff;
-    background-image: url("../images/bg-header.png");
+    background-image: url('../images/bg-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 5%;
@@ -734,6 +752,55 @@ label {
     padding-left: 180px;
   }
 
+  .popup-cover {
+    margin: 0 auto;
+  }
+
+  .modal {
+    max-width: 1150px;
+    height: 100vh;
+    margin: 12px auto;
+    padding-top: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 0;
+  }
+
+  .modal .modal-header {
+    justify-content: flex-start;
+  }
+
+  .modal .modal-header .project-client {
+    margin-right: 28px;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 6px 0;
+  }
+
+  .modal .project-description-div {
+    flex: 2;
+    max-height: 75%;
+    overflow: hidden;
+  }
+
+  .technologies-buttons {
+    margin-left: 32px;
+    padding-top: 12px;
+    flex: 1;
+  }
+
+  .modal .modal-see-btn {
+    justify-content: flex-start;
+  }
+
+  .modal .modal-see-btn .project-source {
+    margin-left: 24px;
+  }
+
   .card {
     width: auto;
     border-radius: 24px;
@@ -742,10 +809,12 @@ label {
 
   .card-body {
     display: flex;
+    justify-content: space-between;
     flex-flow: row nowrap;
   }
 
   .card-info {
+    width: 60%;
     display: flex;
     flex-flow: column;
     padding-left: 5%;
@@ -758,7 +827,7 @@ label {
     right: 16px;
   }
 
-  .img-right {
+  .item:nth-child(odd) .card-featured-image-container {
     order: 2;
   }
 
@@ -833,7 +902,7 @@ label {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-image: url("./images/bg-cont-frm-shapes.png");
+    background-image: url('./images/bg-cont-frm-shapes.png');
   }
 
   .contact {
