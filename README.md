@@ -14,6 +14,7 @@ This site was built using [GitHub Pages](https://oybekkayumov.github.io/portfoli
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 

@@ -103,18 +103,14 @@ works.forEach((work, index) => {
 
               <div class="card-info">
                 <h3 class="card-title">${work.projectTitle}</h3>
-
                 <div class="canopy-part">
                   <div class="canopy">
-                    <h3 class="desktop-facebook">${work.projectClient}</h3>
-                    <h3 class="canopy-mobile">${work.projectClient}</h3>
+                    <h3 class="project-client">${work.projectClient}</h3>
                   </div>
-                 
                   <ul class="roles-ul">
-                    <li class="role">${work.projectRole}</li>
-                    <li class="role">${work.projectYear}</li>
+                    <li class="project-role">${work.projectRole}</li>
+                    <li class="project-year">${work.projectYear}</li>
                   </ul>
-                  
                 </div>
 
                 <div>
@@ -158,27 +154,17 @@ technologyListArray.forEach((projectTechnologyList, index) => {
 
 const seeProjectBtns = document.querySelectorAll('.see-project');
 let modalCloseButton;
-// const modalCover = document.querySelector('.popup-cover');
-
-
-// const projectTitle = document.querySelector('#project-title');
-// const projectClient = document.querySelector('#project-client');
-// const projectRole = document.querySelector('#project-role');
-// const projectYear = document.querySelector('#project-year');
-// const projectSnapshot = document.querySelector('#project-snapshot');
-// const projectDescription = document.querySelector('#project-description');
-// const projectTechnologies = document.querySelector('#project-technologies');
 
 seeProjectBtns.forEach((seeProjectBtn) => {
   seeProjectBtn.addEventListener('click', () => {
     let projectId = seeProjectBtn.id;
-
-    // populateModalContent(parseInt(projectId.substring(projectId.length - 1), 10) - 1);
-    createModal(parseInt(projectId.substring(projectId.length - 1), 10) - 1);
+    let index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
+    createModal(index);
 
     const modalCover = document.querySelector('.popup-cover');
-    modalCloseButton = document.querySelector('#modal-close-icon');
     modalCover.style.display = 'block';
+    populateModalTechnologyList(index);
+    isCloseButtonClicked(modalCover);
     documentBody.style.overflow = 'hidden';
   });
 });
@@ -215,12 +201,12 @@ function createModal(index) {
               </div>
               <div class="technologies-buttons">
                 <div>
-                  <ul class="tags-ul" id="project-technologies"></ul>
+                  <ul class="project-modal-technologies tags-ul" id="project-technologies"></ul>
                 </div>
                 <div class="modal-see-btn">
                 
                   <button class="btn project-live" id="project-live">
-                    <a href="http://www.google.com">
+                    <a href=${works[index].livelink}>
                       See live
                       <img src="./images/popup-work/Live-icon.svg" alt="live icon" />
                     </a>
@@ -228,7 +214,7 @@ function createModal(index) {
                   </button>
 
                   <button class="btn project-source" id="project-source">
-                  <a href="http://www.google.com">
+                  <a href=${works[index].sourcelink}>
                       See Source
                       <img src="./images/popup-work/Github-icon.svg" alt="github icon" />
                     </a>                    
@@ -237,35 +223,29 @@ function createModal(index) {
               </div>
             </div>`;
   worksContainer.appendChild(popupCover);
-  
 }
 
+function populateModalTechnologyList(index) {
+  let modalTechnology = document.querySelector('.project-modal-technologies');
+  let listItem;
 
-console.log(modalCloseButton)
+  works[index].projectTechnologies.map((technology) => {
+    listItem = document.createElement('li');
+    listItem.className = 'tag';
+    listItem.innerHTML = `<a href="#">${technology}</a>`;
+    modalTechnology.appendChild(listItem);
+  });
+}
 
+function isCloseButtonClicked(modalCover) {
+  if (modalCover.style.display === 'block') {
+    const modalCloseButton = document.querySelector('#modal-close-icon');
+    let modalTechnology = document.querySelector('.project-modal-technologies');
 
-// function populateModalContent(index) {
-//   projectTitle.innerHTML = works[index].projectTitle;
-//   projectClient.innerHTML = works[index].projectClient;
-//   projectRole.innerHTML = works[index].projectRole;
-//   projectYear.innerHTML = works[index].projectYear;
-//   projectSnapshot.src = works[index].projectSnapshotDesktop;
-//   projectDescription.innerHTML = works[index].projectDescription;
-
-//   let listItem;
-
-//   works[index].projectTechnologies.map((technology) => {
-//     listItem = document.createElement('li');
-//     listItem.className = 'tag';
-//     listItem.innerHTML = '<a href="#">' + technology + '</a>';
-//     projectTechnologies.appendChild(listItem);
-//   });
-// }
-
-modalCloseButton.addEventListener('click', () => {
-  projectTechnologies.innerHTML = '';
-  modalCover.style.display = 'none';
-  documentBody.style.overflow = '';
-});
-
-// function createProjectCard(index) {}
+    modalCloseButton.addEventListener('click', () => {
+      modalCover.style.display = 'none';
+      modalTechnology.innerHTML = '';
+      documentBody.style.overflow = '';
+    });
+  }
+}

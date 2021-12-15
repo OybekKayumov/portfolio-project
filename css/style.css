@@ -145,19 +145,6 @@ header {
   margin: 0;
 }
 
-/* .btn {
-  box-sizing: border-box;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  padding: 12px;
-  margin: 12px 0;
-} */
-
 .btn {
   font-size: 17px;
   line-height: 24px;
@@ -377,7 +364,7 @@ header {
   text-transform: capitalize;
 }
 
-.modal .modal-header .project-client {
+.project-client {
   font-size: 13px;
   margin: 0;
   padding: 0;
@@ -397,7 +384,7 @@ header {
   width: 70%;
 }
 
-.modal .modal-header .role-year-ul .project-role,
+.project-role,
 .project-year {
   color: #7a869a;
   font-size: 13px;
@@ -742,6 +729,7 @@ label {
     line-height: 30px;
     margin: 8px 0;
     padding-left: 180px;
+    max-width: 70%;
   }
 
   .media-h2 {
@@ -843,6 +831,8 @@ label {
 
   .desktop-p-experiment {
     visibility: visible;
+    font-size: 20px;
+    line-height: 200%;
     display: block;
     margin-right: 46px;
   }
@@ -850,6 +840,12 @@ label {
   .mobile-p-deskribe {
     visibility: hidden;
     display: none;
+  }
+
+  .project-client,
+  .project-role,
+  .project-year {
+    font-size: 18px;
   }
 
   .main-page-about-myself {
