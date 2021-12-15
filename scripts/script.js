@@ -35,7 +35,7 @@ const works = [
     projectDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     projectTechnologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootsrap'],
-    livelink: 'https://oybekkayumov.github.io/portfolio-project/',
+    livelink: 'https://oybekkayumov.github.io/portfolio-project',
     sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
   },
   {
@@ -157,45 +157,110 @@ technologyListArray.forEach((projectTechnologyList, index) => {
 });
 
 const seeProjectBtns = document.querySelectorAll('.see-project');
-const modalCover = document.querySelector('.popup-cover');
-const modalCloseButton = document.querySelector('.close-modal');
+let modalCloseButton;
+// const modalCover = document.querySelector('.popup-cover');
 
-const projectTitle = document.querySelector('#project-title');
-const projectClient = document.querySelector('#project-client');
-const projectRole = document.querySelector('#project-role');
-const projectYear = document.querySelector('#project-year');
-const projectSnapshot = document.querySelector('#project-snapshot');
-const projectDescription = document.querySelector('#project-description');
-const projectTechnologies = document.querySelector('#project-technologies');
+
+// const projectTitle = document.querySelector('#project-title');
+// const projectClient = document.querySelector('#project-client');
+// const projectRole = document.querySelector('#project-role');
+// const projectYear = document.querySelector('#project-year');
+// const projectSnapshot = document.querySelector('#project-snapshot');
+// const projectDescription = document.querySelector('#project-description');
+// const projectTechnologies = document.querySelector('#project-technologies');
 
 seeProjectBtns.forEach((seeProjectBtn) => {
   seeProjectBtn.addEventListener('click', () => {
     let projectId = seeProjectBtn.id;
 
-    populateModalContent(parseInt(projectId.substring(projectId.length - 1), 10) - 1);
+    // populateModalContent(parseInt(projectId.substring(projectId.length - 1), 10) - 1);
+    createModal(parseInt(projectId.substring(projectId.length - 1), 10) - 1);
 
+    const modalCover = document.querySelector('.popup-cover');
+    modalCloseButton = document.querySelector('#modal-close-icon');
     modalCover.style.display = 'block';
     documentBody.style.overflow = 'hidden';
   });
 });
 
-function populateModalContent(index) {
-  projectTitle.innerHTML = works[index].projectTitle;
-  projectClient.innerHTML = works[index].projectClient;
-  projectRole.innerHTML = works[index].projectRole;
-  projectYear.innerHTML = works[index].projectYear;
-  projectSnapshot.src = works[index].projectSnapshotDesktop;
-  projectDescription.innerHTML = works[index].projectDescription;
+function createModal(index) {
+  let popupCover = document.createElement('div');
+  popupCover.className = 'popup-cover';
+  popupCover.innerHTML = `<div class="modal">
+            <button id="modal-close-icon" class="close-modal">
+              <i class="bi bi-x"></i>
+            </button>
+            <h3 class="project-title" id="project-title">${works[index].projectTitle}</h3>
 
-  let listItem;
+            <div class="modal-header">
+              <h3 class="project-client" id="project-client">${works[index].projectClient}</h3>
+              <ul class="role-year-ul">
+                <li class="project-role" id="project-role">${works[index].projectRole}</li>
+                <li class="project-year" id="project-year">${works[index].projectYear}</li>
+              </ul>
+            </div>
+            <div class="featured-image-container">
+              <img
+                id="project-snapshot"
+                class="featured-image"
+                src=${works[index].projectSnapshotDesktop}
+                alt="professional art printing website screenshot"
+              />
+            </div>
+            <div class="project-details">
+              <div class="project-description-div">
+                <p class="modal-description" id="project-description">
+                  ${works[index].projectDescription}
+                </p>
+              </div>
+              <div class="technologies-buttons">
+                <div>
+                  <ul class="tags-ul" id="project-technologies"></ul>
+                </div>
+                <div class="modal-see-btn">
+                
+                  <button class="btn project-live" id="project-live">
+                    <a href="http://www.google.com">
+                      See live
+                      <img src="./images/popup-work/Live-icon.svg" alt="live icon" />
+                    </a>
 
-  works[index].projectTechnologies.map((technology) => {
-    listItem = document.createElement('li');
-    listItem.className = 'tag';
-    listItem.innerHTML = '<a href="#">' + technology + '</a>';
-    projectTechnologies.appendChild(listItem);
-  });
+                  </button>
+
+                  <button class="btn project-source" id="project-source">
+                  <a href="http://www.google.com">
+                      See Source
+                      <img src="./images/popup-work/Github-icon.svg" alt="github icon" />
+                    </a>                    
+                  </button>
+                </div>
+              </div>
+            </div>`;
+  worksContainer.appendChild(popupCover);
+  
 }
+
+
+console.log(modalCloseButton)
+
+
+// function populateModalContent(index) {
+//   projectTitle.innerHTML = works[index].projectTitle;
+//   projectClient.innerHTML = works[index].projectClient;
+//   projectRole.innerHTML = works[index].projectRole;
+//   projectYear.innerHTML = works[index].projectYear;
+//   projectSnapshot.src = works[index].projectSnapshotDesktop;
+//   projectDescription.innerHTML = works[index].projectDescription;
+
+//   let listItem;
+
+//   works[index].projectTechnologies.map((technology) => {
+//     listItem = document.createElement('li');
+//     listItem.className = 'tag';
+//     listItem.innerHTML = '<a href="#">' + technology + '</a>';
+//     projectTechnologies.appendChild(listItem);
+//   });
+// }
 
 modalCloseButton.addEventListener('click', () => {
   projectTechnologies.innerHTML = '';
@@ -203,4 +268,4 @@ modalCloseButton.addEventListener('click', () => {
   documentBody.style.overflow = '';
 });
 
-function createProjectCard(index) {}
+// function createProjectCard(index) {}
