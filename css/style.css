@@ -758,6 +758,12 @@ label {
     justify-content: flex-start;
   }
 
+  .project-client,
+  .project-role,
+  .project-year {
+    font-size: 18px;
+  }
+
   .modal .modal-header .project-client {
     margin-right: 28px;
   }
@@ -840,12 +846,6 @@ label {
   .mobile-p-deskribe {
     visibility: hidden;
     display: none;
-  }
-
-  .project-client,
-  .project-role,
-  .project-year {
-    font-size: 18px;
   }
 
   .main-page-about-myself {

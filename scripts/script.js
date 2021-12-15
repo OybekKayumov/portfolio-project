@@ -23,7 +23,7 @@ menuItems.forEach((menuItem) => {
 });
 // mobile menu end
 
-//popup menu
+// popup menu
 const works = [
   {
     projectTitle: 'Tonic',
@@ -82,9 +82,10 @@ const works = [
 const worksContainer = document.querySelector('.works-container');
 
 works.forEach((work, index) => {
-  let newIndex = index + 1;
-  let item = document.createElement('div');
-  let card = document.createElement('div');
+  const newIndex = index + 1;
+  const projectId = `project${newIndex}`;
+  const item = document.createElement('div');
+  const card = document.createElement('div');
   item.className = 'item';
   card.className = 'card';
   card.innerHTML = `<div class="card-body">
@@ -128,7 +129,7 @@ works.forEach((work, index) => {
                 <div>
                   <button
                     class="btn btn-enabled-tonic1 see-project"
-                    id=${'project' + newIndex}
+                    id=${projectId}
                   >
                     See Project
                   </button>
@@ -139,8 +140,8 @@ works.forEach((work, index) => {
   worksContainer.appendChild(item);
 });
 
-let technologyList = document.querySelectorAll('.project-card-technologies');
-let technologyListArray = Array.from(technologyList);
+const technologyList = document.querySelectorAll('.project-card-technologies');
+const technologyListArray = Array.from(technologyList);
 
 technologyListArray.forEach((projectTechnologyList, index) => {
   let listItem;
@@ -149,16 +150,16 @@ technologyListArray.forEach((projectTechnologyList, index) => {
     listItem.className = 'tag';
     listItem.innerHTML = `<a href="#">${technology}</a>`;
     technologyList[index].appendChild(listItem);
+    return 0;
   });
 });
 
 const seeProjectBtns = document.querySelectorAll('.see-project');
-let modalCloseButton;
 
 seeProjectBtns.forEach((seeProjectBtn) => {
   seeProjectBtn.addEventListener('click', () => {
-    let projectId = seeProjectBtn.id;
-    let index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
+    const projectId = seeProjectBtn.id;
+    const index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
     createModal(index);
 
     const modalCover = document.querySelector('.popup-cover');
@@ -167,10 +168,23 @@ seeProjectBtns.forEach((seeProjectBtn) => {
     isCloseButtonClicked(modalCover);
     documentBody.style.overflow = 'hidden';
   });
+
+  function populateModalTechnologyList(index) {
+    const modalTechnology = document.querySelector('.project-modal-technologies');
+    let listItem;
+
+    works[index].projectTechnologies.map((technology) => {
+      listItem = document.createElement('li');
+      listItem.className = 'tag';
+      listItem.innerHTML = `<a href="#">${technology}</a>`;
+      modalTechnology.appendChild(listItem);
+      return 0;
+    });
+  }
 });
 
 function createModal(index) {
-  let popupCover = document.createElement('div');
+  const popupCover = document.createElement('div');
   popupCover.className = 'popup-cover';
   popupCover.innerHTML = `<div class="modal">
             <button id="modal-close-icon" class="close-modal">
@@ -225,22 +239,12 @@ function createModal(index) {
   worksContainer.appendChild(popupCover);
 }
 
-function populateModalTechnologyList(index) {
-  let modalTechnology = document.querySelector('.project-modal-technologies');
-  let listItem;
 
-  works[index].projectTechnologies.map((technology) => {
-    listItem = document.createElement('li');
-    listItem.className = 'tag';
-    listItem.innerHTML = `<a href="#">${technology}</a>`;
-    modalTechnology.appendChild(listItem);
-  });
-}
 
 function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
     const modalCloseButton = document.querySelector('#modal-close-icon');
-    let modalTechnology = document.querySelector('.project-modal-technologies');
+    const modalTechnology = document.querySelector('.project-modal-technologies');
 
     modalCloseButton.addEventListener('click', () => {
       modalCover.style.display = 'none';
