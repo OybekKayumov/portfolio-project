@@ -154,35 +154,6 @@ technologyListArray.forEach((projectTechnologyList, index) => {
   });
 });
 
-const seeProjectBtns = document.querySelectorAll('.see-project');
-
-seeProjectBtns.forEach((seeProjectBtn) => {
-  seeProjectBtn.addEventListener('click', () => {
-    const projectId = seeProjectBtn.id;
-    const index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
-    createModal(index);
-
-    const modalCover = document.querySelector('.popup-cover');
-    modalCover.style.display = 'block';
-    populateModalTechnologyList(index);
-    isCloseButtonClicked(modalCover);
-    documentBody.style.overflow = 'hidden';
-  });
-
-  function populateModalTechnologyList(index) {
-    const modalTechnology = document.querySelector('.project-modal-technologies');
-    let listItem;
-
-    works[index].projectTechnologies.map((technology) => {
-      listItem = document.createElement('li');
-      listItem.className = 'tag';
-      listItem.innerHTML = `<a href="#">${technology}</a>`;
-      modalTechnology.appendChild(listItem);
-      return 0;
-    });
-  }
-});
-
 function createModal(index) {
   const popupCover = document.createElement('div');
   popupCover.className = 'popup-cover';
@@ -239,7 +210,18 @@ function createModal(index) {
   worksContainer.appendChild(popupCover);
 }
 
+function populateModalTechnologyList(index) {
+  const modalTechnology = document.querySelector('.project-modal-technologies');
+  let listItem;
 
+  works[index].projectTechnologies.map((technology) => {
+    listItem = document.createElement('li');
+    listItem.className = 'tag';
+    listItem.innerHTML = `<a href="#">${technology}</a>`;
+    modalTechnology.appendChild(listItem);
+    return 0;
+  });
+}
 
 function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
@@ -250,6 +232,23 @@ function isCloseButtonClicked(modalCover) {
       modalCover.style.display = 'none';
       modalTechnology.innerHTML = '';
       documentBody.style.overflow = '';
+      worksContainer.removeChild(modalCover);
     });
   }
 }
+
+const seeProjectBtns = document.querySelectorAll('.see-project');
+
+seeProjectBtns.forEach((seeProjectBtn) => {
+  seeProjectBtn.addEventListener('click', () => {
+    const projectId = seeProjectBtn.id;
+    const index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
+    createModal(index);
+
+    const modalCover = document.querySelector('.popup-cover');
+    modalCover.style.display = 'block';
+    populateModalTechnologyList(index);
+    isCloseButtonClicked(modalCover);
+    documentBody.style.overflow = 'hidden';
+  });
+});

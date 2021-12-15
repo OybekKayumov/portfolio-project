@@ -298,6 +298,15 @@ header {
   display: none;
 }
 
+.works .works-section-heading {
+  color: #091e42;
+  font-size: 32px;
+  font-weight: 700;
+  justify-items: center;
+  padding-top: 32px;
+  text-align: center;
+}
+
 .works-container {
   display: grid;
   grid-template-columns: auto;
@@ -846,6 +855,15 @@ label {
   .mobile-p-deskribe {
     visibility: hidden;
     display: none;
+  }
+
+  .works .works-section-heading {
+    color: #091e42;
+    font-size: 48px;
+    font-weight: 700;
+    justify-items: center;
+    padding-top: 5%;
+    text-align: center;
   }
 
   .main-page-about-myself {
