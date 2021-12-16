@@ -257,35 +257,32 @@ seeProjectBtns.forEach((seeProjectBtn) => {
 
 // form validation
 
-const form = document.querySelector(".form-contact");
+const form = document.querySelector('#form-contact');
+const labelError = document.querySelector('.error-messages');
 
-const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter email address in lower cases";
+const EMAIL_INVALID = 'Please enter email address in lower case letters';
 
-function validateEmail(input, requiredMsg, invalidMsg) {
-	// check if the value is not empty
-	if (input.value.trim() === "") {
-		return false;
-	}
-	// validate email format
-	const emailRegex = //;
+function validateEmail(email) {
+  const emailValue = email.value.trim();
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
 
-	const email = input.value.trim();
-	if (!emailRegex.test(email)) {
-		return false;
-	}
-	return true;
+  if (!emailRegex.test(emailValue)) {
+    return false;
+  }
+
+  return true;
 }
 
-form.addEventListener("submit", function (event) {
-	// stop form submission
-	event.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-	// validate the form
-  let isEmailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-	// if valid, submit the form.
-	if (isEmailValid) {
-		alert("Please enter valid email");
-	}
+  const { email } = form.elements;
+  const isValidEmail = validateEmail(email);
+
+  if (isValidEmail) {
+    labelError.style.display = 'none';
+  } else {
+    labelError.style.display = 'block';
+    labelError.textContent = `${EMAIL_INVALID}!\n`;
+  }
 });
-
