@@ -252,3 +252,40 @@ seeProjectBtns.forEach((seeProjectBtn) => {
     documentBody.style.overflow = 'hidden';
   });
 });
+
+// end popup
+
+// form validation
+
+const form = document.querySelector(".form-contact");
+
+const EMAIL_REQUIRED = "Please enter your email";
+const EMAIL_INVALID = "Please enter email address in lower cases";
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+	// check if the value is not empty
+	if (input.value.trim() === "") {
+		return false;
+	}
+	// validate email format
+	const emailRegex = //;
+
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return false;
+	}
+	return true;
+}
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+
+	// validate the form
+  let isEmailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+	// if valid, submit the form.
+	if (isEmailValid) {
+		alert("Please enter valid email");
+	}
+});
+
