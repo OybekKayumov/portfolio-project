@@ -405,11 +405,6 @@ header {
   margin-left: 32px;
 }
 
-.modal .featured-image-container {
-  align-self: stretch;
-  max-height: 50%;
-}
-
 .modal .featured-image {
   width: 100%;
   max-height: 100%;
@@ -755,12 +750,12 @@ label {
 
   .modal {
     max-width: 1150px;
-    height: 100vh;
+    max-height: 100vh;
     margin: 12px auto;
     padding-top: 20px;
     padding-right: 16px;
     padding-left: 16px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .modal .modal-header {
@@ -775,6 +770,10 @@ label {
 
   .modal .modal-header .project-client {
     margin-right: 28px;
+  }
+
+  .modal .featured-image-container {
+    align-self: stretch;
   }
 
   .project-details {
@@ -859,7 +858,7 @@ label {
 
   .works .works-section-heading {
     color: #091e42;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     justify-items: center;
     padding-top: 5%;
