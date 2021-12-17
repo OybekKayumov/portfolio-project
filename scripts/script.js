@@ -280,6 +280,7 @@ form.addEventListener('submit', (event) => {
 
   if (isValidEmail) {
     labelError.style.display = 'none';
+    form.submit();
   } else {
     labelError.style.display = 'block';
     labelError.textContent = `${EMAIL_INVALID}!\n`;
