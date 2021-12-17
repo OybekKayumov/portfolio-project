@@ -299,25 +299,22 @@ const contactMessage = {
   message: '',
 };
 
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(contactMessage));
+}
+
 inputElements.forEach((input) => {
-  input.addEventListener('change', (event) => {
+  input.addEventListener('change', () => {
     contactMessage[input.name] = form.elements[input.name].value.trim();
     populateStorage();
   });
 });
 
-function populateStorage() {
-  localStorage.setItem('formData', JSON.stringify(contactMessage));
-  console.log('value in local storage:', localStorage.getItem('formData'));
-}
-
-window.addEventListener('load', (event) => {
-  // const form = document.querySelector('.form-contact');
+window.addEventListener('load', () => {
   const inputElements = document.querySelectorAll('.contact-form-input');
-
-  inputElements.forEach((input) => {
-    input.value = JSON.parse(localStorage.getItem('formData'))[input.name];
-  });
-
-  console.log('Contact form inputs are now filled upon page load from local storage');
+  if (localStorage.getItem('formData') !== '' || localStorage.getItem('formData') !== null) {
+    inputElements.forEach((input) => {
+      input.value = JSON.parse(localStorage.getItem('formData'))[input.name];
+    });
+  }
 });
