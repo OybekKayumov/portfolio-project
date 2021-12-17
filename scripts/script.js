@@ -310,3 +310,14 @@ function populateStorage() {
   localStorage.setItem('formData', JSON.stringify(contactMessage));
   console.log('value in local storage:', localStorage.getItem('formData'));
 }
+
+window.addEventListener('load', (event) => {
+  // const form = document.querySelector('.form-contact');
+  const inputElements = document.querySelectorAll('.contact-form-input');
+
+  inputElements.forEach((input) => {
+    input.value = JSON.parse(localStorage.getItem('formData'))[input.name];
+  });
+
+  console.log('Contact form inputs are now filled upon page load from local storage');
+});
