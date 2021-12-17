@@ -252,3 +252,37 @@ seeProjectBtns.forEach((seeProjectBtn) => {
     documentBody.style.overflow = 'hidden';
   });
 });
+
+// end popup
+
+// form validation
+
+const form = document.querySelector('#form-contact');
+const labelError = document.querySelector('.error-messages');
+
+const EMAIL_INVALID = 'Please enter email address in lower case letters';
+
+function validateEmail(email) {
+  const emailValue = email.value.trim();
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
+
+  if (!emailRegex.test(emailValue)) {
+    return false;
+  }
+  return true;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const { email } = form.elements;
+  const isValidEmail = validateEmail(email);
+
+  if (isValidEmail) {
+    labelError.style.display = 'none';
+    form.submit();
+  } else {
+    labelError.style.display = 'block';
+    labelError.textContent = `${EMAIL_INVALID}!\n`;
+  }
+});

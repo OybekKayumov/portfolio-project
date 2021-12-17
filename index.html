@@ -244,7 +244,12 @@
         </div>
 
         <div class="contact">
-          <form class="form-contact" action="https://formspree.io/f/xgedwnlv" method="POST">
+          <form
+            id="form-contact"
+            class="form-contact"
+            action="https://formspree.io/f/xgedwnlv"
+            method="POST"
+          >
             <label for="name">Name :</label>
             <input
               type="text"
@@ -272,9 +277,9 @@
               placeholder="Write your message here"
               required
             ></textarea>
+            <button type="submit" class="btn btn-enabled-tonic1 btn-contact">Get In Touch</button>
+            <label id="error" class="error-messages"></label>
           </form>
-
-          <button type="submit" class="btn btn-enabled-tonic1 btn-contact">Get It Touch</button>
         </div>
 
         <a href="#" class="">

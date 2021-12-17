@@ -600,14 +600,15 @@ label {
 .contact {
   margin: 2px 8px;
   padding: 8px;
-  max-width: 350px;
+  width: 327px;
 }
 
 .form-contact {
   display: flex;
   flex-flow: column nowrap;
+  align-items: flex-start;
   row-gap: 5px;
-  max-width: 350px;
+  max-width: 100%;
 }
 
 .form-contact input {
@@ -615,7 +616,7 @@ label {
   color: #172b4d;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  max-width: 327px;
+  width: 100%;
   height: 60px;
   font-size: 18px;
   font-weight: 500;
@@ -628,22 +629,30 @@ label {
 
 .form-contact textarea {
   background: #fff;
-  color: #b3bac5;
+  color: #222;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  max-width: 327px;
+  width: 100%;
   height: 165px;
   padding: 8px;
   box-sizing: border-box;
 }
 
 .btn-contact {
-  color: #1b31f0;
+  color: #6070ff;
   text-align: left;
   background: #fff;
   border: none;
   border-radius: 8px;
   margin-top: 20px;
+}
+
+.error-messages {
+  display: none;
+  font-size: 12px;
+  margin-top: 12px;
+  color: #dc3545;
+  background-color: #fff;
 }
 
 #line {
@@ -919,21 +928,23 @@ label {
   }
 
   .contact {
+    width: 447px;
+  }
+
+  .form-contact {
+    justify-content: stretch;
     width: 100%;
   }
 
-  .contact-form {
-    max-width: 100%;
-  }
-
-  .contact-form input {
-    max-width: 570px;
+  .form-contact input {
+    width: 100%;
     height: 50px;
     border-radius: 2px;
   }
 
-  .contact-form textarea {
-    max-width: 570px;
+  .form-contact textarea {
+    width: 100%;
+    color: #222;
     height: 170px;
     border-radius: 2px;
   }
@@ -941,6 +952,10 @@ label {
   .p-contact-info {
     max-width: 570px;
     text-align: center;
+  }
+
+  .btn-contact {
+    align-self: center;
   }
 
   #line {
