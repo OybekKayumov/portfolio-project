@@ -269,8 +269,7 @@ function validateEmail(email) {
   if (!emailRegex.test(emailValue)) {
     return false;
   }
-
-  return true;
+    return true;
 }
 
 form.addEventListener('submit', (event) => {
