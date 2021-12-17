@@ -286,3 +286,38 @@ form.addEventListener('submit', (event) => {
     labelError.textContent = `${EMAIL_INVALID}!\n`;
   }
 });
+
+// end form validation
+
+// contact form local storage
+
+const inputElements = document.querySelectorAll('input');
+const messageBody = document.querySelector('textarea');
+const { email, message } = form.elements;
+const contactMessage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+inputElements.forEach((input) => {
+  input.addEventListener('change', (event) => {
+    console.log(event);
+    contactMessage[input.name] = form.elements[input.name].value.trim();
+    console.log(contactMessage);
+
+    populateStorage();
+    if (!localStorage.getItem('formData')) {
+      console.log('No such data in local storage!');
+    } else {
+      console.log('Similar data exists in local storage!');
+    }
+  });
+});
+
+messageBody.addEventListener('change', (event) => {
+  console.log(event);
+  contactMessage.message = form.elements['message'].value.trim();
+  console.log(contactMessage);
+  populateStorage();
+});
