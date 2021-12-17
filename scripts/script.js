@@ -257,8 +257,8 @@ seeProjectBtns.forEach((seeProjectBtn) => {
 
 // form validation
 
-const form = document.querySelector('#form-contacts');
-const labelError = document.querySelector('.error-message');
+const form = document.querySelector('#form-contact');
+const labelError = document.querySelector('.error-messages');
 
 const EMAIL_INVALID = 'Please enter email address in lower case letters';
 
