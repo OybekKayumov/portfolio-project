@@ -33,8 +33,8 @@ const works = [
     projectSnapshotDesktop: './images/desk-works1.png',
     projectSnapshotMobile: './images/works1.png',
     projectDescription:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    projectTechnologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootsrap'],
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectTechnologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
     livelink: 'https://oybekkayumov.github.io/portfolio-project',
     sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
   },
@@ -46,7 +46,7 @@ const works = [
     projectSnapshotDesktop: './images/desk-works2.png',
     projectSnapshotMobile: './images/works2.png',
     projectDescription:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     projectTechnologies: ['html', 'css', 'javascript'],
     livelink: 'https://oybekkayumov.github.io/portfolio-project/',
     sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
@@ -59,7 +59,7 @@ const works = [
     projectSnapshotDesktop: './images/desk-works3.png',
     projectSnapshotMobile: './images/works3.png',
     projectDescription:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     projectTechnologies: ['html', 'css', 'javascript'],
     livelink: 'https://oybekkayumov.github.io/portfolio-project/',
     sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
@@ -73,7 +73,7 @@ const works = [
     projectSnapshotMobile: './images/works4.png',
     projectDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    projectTechnologies: ['html', 'css', 'javascript', 'Bootsrap'],
+    projectTechnologies: ['html', 'css', 'javascript', 'bootstrap'],
     livelink: 'https://oybekkayumov.github.io/portfolio-project/',
     sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
   },
