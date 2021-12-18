@@ -315,6 +315,7 @@ window.addEventListener('load', () => {
   if (localStorage.getItem('formData') !== '' || localStorage.getItem('formData') !== null) {
     inputElements.forEach((input) => {
       input.value = JSON.parse(localStorage.getItem('formData'))[input.name];
+      contactMessage[input.name] = input.value;
     });
   }
 });
