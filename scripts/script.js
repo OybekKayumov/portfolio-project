@@ -43,8 +43,8 @@ const works = [
     projectClient: 'medium-fidelity wireframe',
     projectRole: 'Back End Dev',
     projectYear: '2022',
-    projectSnapshotDesktop: '../images/newProjects/awesomebooks-desktop.png',
-    projectSnapshotMobile: '../images/newProjects/awesomebooks-mobile.png',
+    projectSnapshotDesktop: './images/newProjects/awesomebooks-desktop.png',
+    projectSnapshotMobile: './images/newProjects/awesomebooks-mobile.png',
     projectDescription:
       '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. Built by using JavaScript and used a medium-fidelity wireframe to build the UI. Medium-fidelity wireframes present how your websites elements should be arranged, but they skip detailed information about aesthetics (e.g., colors, images). They can assist with communicating to teams how aesthetic features can support essential functionalities.',
     projectTechnologies: ['html', 'css', 'javascript'],
