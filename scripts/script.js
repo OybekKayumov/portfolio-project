@@ -78,6 +78,19 @@ const works = [
     sourcelink: 'https://github.com/OybekKayumov/microverse-m2-webpack.git',
   },
   {
+    projectTitle: 'JavaScript Capstone',
+    projectClient: 'International Exhibition',
+    projectRole: 'Back End Dev',
+    projectYear: '2022',
+    projectSnapshotDesktop: './images/newProjects/capstone-js-desktop.png',
+    projectSnapshotMobile: './images/newProjects/capstone-js-mobile.png',
+    projectDescription:
+      '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. A simple website that allows for doing that, and you will do it using ES6 and Webpack. Implemented adding new item, removing selected item, marking a selected item as complete, save and load from LocalStorage',
+    projectTechnologies: ['html', 'css', 'javascript', 'node', 'webpack'],
+    livelink: 'https://oybekkayumov.github.io/module1-project/',
+    sourcelink: 'https://github.com/OybekKayumov/module1-project.git',
+  },
+  {
     projectTitle: 'Tonic',
     projectClient: 'canopy3',
     projectRole: 'Back End Dev',
