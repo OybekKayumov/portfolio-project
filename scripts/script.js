@@ -78,6 +78,19 @@ const works = [
     sourcelink: 'https://github.com/OybekKayumov/microverse-m2-webpack.git',
   },
   {
+    projectTitle: 'JavaScript Capstone',
+    projectClient: 'International Exhibition',
+    projectRole: 'Back End Dev',
+    projectYear: '2022',
+    projectSnapshotDesktop: './images/newProjects/capstone-js-desktop.png',
+    projectSnapshotMobile: './images/newProjects/capstone-js-mobile.png',
+    projectDescription:
+      '"Exhibiting at UzFood is a unique opportunity to present your products to a wide audience of professionals, find new partners and customers among representatives of retail chains and wholesale businesses.',
+    projectTechnologies: ['html', 'css', 'javascript', 'node', 'webpack'],
+    livelink: 'https://oybekkayumov.github.io/module1-project/',
+    sourcelink: 'https://github.com/OybekKayumov/module1-project.git',
+  },
+  {
     projectTitle: 'Tonic',
     projectClient: 'canopy3',
     projectRole: 'Back End Dev',
