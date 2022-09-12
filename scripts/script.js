@@ -26,17 +26,17 @@ menuItems.forEach((menuItem) => {
 // popup menu
 const works = [
   {
-    projectTitle: 'Tonic',
+    projectTitle: 'Space Travelers Hub',
     projectClient: 'canopy',
     projectRole: 'Back End Dev',
-    projectYear: '2015',
-    projectSnapshotDesktop: './images/desk-works1.png',
-    projectSnapshotMobile: './images/works1.png',
+    projectYear: '2022',
+    projectSnapshotDesktop: '../images/newProjects/space-travelers-desktop.png',
+    projectSnapshotMobile: '../images/newProjects/space-travelers-mob.png',
     projectDescription:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    projectTechnologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    livelink: 'https://oybekkayumov.github.io/portfolio-project',
-    sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
+      'This project consumes real live data from the SpaceX API. This application is built for a fake company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions',
+    projectTechnologies: ['javascript', 'react', 'redux', 'github', 'bootstrap'],
+    livelink: 'https://oybekkayumov.github.io/space-travellers-hub1/',
+    sourcelink: 'https://github.com/OybekKayumov/space-travellers-hub1',
   },
   {
     projectTitle: 'Awesome books',
