@@ -30,8 +30,8 @@ const works = [
     projectClient: 'canopy',
     projectRole: 'Back End Dev',
     projectYear: '2022',
-    projectSnapshotDesktop: '../images/newProjects/space-travelers-desktop.png',
-    projectSnapshotMobile: '../images/newProjects/space-travelers-mob.png',
+    projectSnapshotDesktop: './images/newProjects/space-travelers-desktop.png',
+    projectSnapshotMobile: './images/newProjects/space-travelers-mob.png',
     projectDescription:
       'This project consumes real live data from the SpaceX API. This application is built for a fake company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions',
     projectTechnologies: ['javascript', 'react', 'redux', 'github', 'bootstrap'],
@@ -52,17 +52,17 @@ const works = [
     sourcelink: 'https://github.com/OybekKayumov/microverse-m2-awbook.git',
   },
   {
-    projectTitle: 'Multi-post stories',
+    projectTitle: 'blog-app',
     projectClient: 'canopy2',
     projectRole: 'Back End Dev',
-    projectYear: '2016',
+    projectYear: '2022',
     projectSnapshotDesktop: './images/desk-works2.png',
     projectSnapshotMobile: './images/works2.png',
     projectDescription:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    projectTechnologies: ['html', 'css', 'javascript'],
+      'The Blog app is a classic example of a blog website. We create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.',
+    projectTechnologies: ['ruby', 'ruby on rails', 'postgresql', 'api'],
     livelink: 'https://oybekkayumov.github.io/portfolio-project/',
-    sourcelink: 'https://github.com/OybekKayumov/portfolio-project',
+    sourcelink: 'https://github.com/OybekKayumov/blog-app',
   },
   {
     projectTitle: 'To-Do List',
