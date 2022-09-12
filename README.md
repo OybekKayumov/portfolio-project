@@ -28,7 +28,7 @@ to set this project up please run these commands:
 
 - GitHub: [@OybekKayumov](https://github.com/OybekKayumov)
 - Twitter: [@KayumovOybek](https://twitter.com/KayumovOybek)
-- LinkedIn: [Oybek Kayumov](https://www.linkedin.com/in/oybek-kayumov-54a8485b/)
+- LinkedIn: [Oybek Kayumov](https://www.linkedin.com/in/oybek-kayumov/)
 
 ## 🤝 Contributing
 
